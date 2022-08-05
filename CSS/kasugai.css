@@ -375,6 +375,9 @@
 }
 
 /* ----------------- season ---------------- */
+#season {
+    margin: 0;
+}
 #season_title {
     text-align: center;
     padding-bottom: 10px;
