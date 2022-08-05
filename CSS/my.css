@@ -747,7 +747,7 @@ a.nav-link-2 {
     height: 200px;
     margin: 0;
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 35%;
 }
 .te-info3 {
@@ -1101,8 +1101,9 @@ a.nav-link-2 {
     font-size: 10px;
 }
 #manor-text {
+    padding-top: 50px;
     letter-spacing: 1px;
-    line-height: 40px;
+    line-height: 35px;
 }
 
 @media screen and (min-width:769px) {
