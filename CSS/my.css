@@ -275,6 +275,10 @@ body {
 #hum li {
     color: burlywood;
 }
+#hum li a {
+    text-decoration: none;
+    color: black;
+}
 #hum li span {
     color: black;
 }
