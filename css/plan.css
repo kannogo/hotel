@@ -1,0 +1,516 @@
+@charset "UTF-8";
+
+#plan_hero {
+    border: none;
+}
+#plan_hero img {
+    height: 45vh;
+}
+#plan_overlay {
+    text-align: center;
+    padding-top: 5px;
+}
+#plan_text {
+    background-color: rgb(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 50px 0;
+    padding-bottom: 40px;
+}
+@media screen and (min-width:1500px) {
+    #plan_hero img {
+        height: 60vh;
+    }
+    #plan_text {
+        margin-top: 40px;
+        padding: 40px 0;
+    }
+}
+
+#plan_text h5 {
+    writing-mode: vertical-rl;
+    font-size: 200%;
+    letter-spacing: 5px;
+    margin: 0 35px;
+}
+#plan_text p {
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+#plan {
+    background-color: rgb(252, 245, 235);
+    
+}
+#plan_2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.plan_3 a {
+    font-size: 18px;
+    text-decoration: none;
+    color: grey;
+}
+.plan_4 a {
+    font-size: 18px;
+    text-decoration: none;
+    color: grey;
+}
+#plan_2 .plan_3 {
+    display: inline-block;
+    width: 300px;
+    border-left: 1px dotted black;
+    border-right: 1px dotted black;
+    margin-left: 25%;
+    position: relative;
+}
+.plan_4 {
+    border-right: 1px dotted black;
+    display: inline-block;
+    width: 300px;
+    
+}
+.plan_3 span {
+    left: 3px;
+    width: 4px;
+    height: 7px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    display: inline-block;
+    transform: rotate(134deg);
+    padding-left: 7px;
+    position: absolute;
+    left: 10rem;
+    top: 2rem;
+}
+.plan_banar {
+    padding-top: 50px;
+    color: grey;
+    padding-bottom: 30px;
+}
+.plan_button {
+    background-color: rgb(234, 228, 228);
+    display: inline-block;
+    width:100px;
+    padding: 5px;
+    
+}
+.plan_button a {
+    letter-spacing: -1px;
+    color: rgb(147, 145, 145);
+    text-align: center;
+}
+.plan_button2 {
+    text-align: right;
+}
+
+@media screen and (max-width:1000px) {
+    html {
+        zoom: 70%;
+    }
+    #plan_2 .plan_3 {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        zoom: 50%;
+    }
+}
+
+/* -------------- sarch ------------------ */
+
+#sarch {
+    background-color: rgb(192, 155, 155);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#sarch h6 {
+    color: white;
+    font-size: 16px;
+    border-top: 10px solid rgb(136, 110, 110);
+    padding: 10px;
+}
+#sarch_group {
+    max-width: 1000px;
+    margin: 5px auto;
+    background-color: white;
+    border: 1px solid rgb(187, 184, 184);
+    padding-top: 5px;
+}
+#sarch_form {
+    padding: 0 20px;
+}
+.sarch_text1 {
+    background-color: rgb(230, 220, 220);
+}
+.sarch_text1 span {
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+}
+.sarch_text2 input {
+    width: 60px;
+}
+.sarch_text2 {
+    margin-top: 0;
+    border-bottom: 1px dotted grey;
+}
+.sarch_text2 span {
+    padding: 0 5px;
+}
+#check {
+    width: 20px;
+    height: 15px;
+    padding-top: 20px;
+}
+#no2 {
+    margin: 1px 0;
+}
+#sarch_button input{
+    display: block;
+    margin: 10px auto;
+    font-weight: bold;
+    letter-spacing: 0;
+    font-size: 14px;
+    padding: 5px;
+}
+#select {
+    padding-top: 5px;
+}
+#select2 {
+    padding-top: 4px;
+}
+
+/* ----------------- plan_info -------------- */
+
+.plan_group {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.plan_info {
+    background-color: rgb(192, 155, 155);
+    border-top: 10px solid rgb(136, 110, 110);
+    margin-top: 30px;
+}
+.plan_info a {
+    color: white;
+    font-size: 16px;
+    display: block;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.plan_info2 {
+    list-style-type: none;
+    background-color: white;
+}
+.plan_info2 li {
+    border-bottom: 1px solid rgb(217, 215, 215);
+    padding-left: 10px;
+}
+.plan_info2 a {
+    display: block;
+    padding: 5px 0;
+    color: rgb(116, 115, 115);
+}
+.plan_info3 {
+    padding-top: 20px;
+}
+.plan_info_right {
+    padding-left: 38%;
+}
+.plan_info3 {
+    position: relative;
+    padding-top: 30px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.plan_info3 a {
+    color: black;
+    padding: 10px;
+}
+.plan_button1 {
+    text-decoration: none;
+    background-color: rgb(237, 232, 232);
+    margin-left: 20px;
+    padding: 0 10px;
+    border: 1px solid grey;
+    border-bottom: none;
+    position: absolute;
+    top: 20px;
+}
+.planbutton2 {
+    background-color: rgb(174, 170, 170);
+    border: 1px solid grey;
+    font-size: 14px;
+    margin-left: 170px;
+}
+.plan_info_right a {
+    background-color: rgb(232, 230, 230);
+    padding: 5px 10px;
+    color: rgb(103, 102, 102);
+}
+.plan_button3 {
+    text-decoration: none;
+}
+.summer_plan {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.summer_title {
+    background-color: rgb(192, 155, 155);
+    border-top: 10px solid rgb(136, 110, 110);
+    margin-top: 30px;
+}
+.summer_title h6 {
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.summer_group {
+    background-color: white;
+}
+.summer_text {
+    padding-top: 20px;
+}
+.summer_text p {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.summer_beef {
+    padding-bottom: 20px;
+}
+.summer_text2, .summer_text3, .summer_text4 {
+    padding-top: 20px;
+}
+.summer_text5 {
+    border-top: 1px dotted rgb(73, 70, 70);
+    padding-top: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 400px;
+}
+.summer_text6 {
+    border-top: 1px dotted rgb(73, 70, 70);
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 400px;
+}
+.center {
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 0;
+    border: 1px solid;
+    padding: 10px;
+}
+.center ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.center li {
+    list-style-type: none;
+    padding: 2px;
+}
+.center img {
+    width: 70px;
+    height: 60px;
+}
+#bigimg, #bigimg2, #bigimg3,  #bigimg4,
+#bigimg5, #bigimg6, #bigimg7, #bigimg8 {
+    width: 100%;
+    height: 250px;
+}
+
+/* --------------- grid ----------------- */
+
+.grid_row {
+    padding: 40px;
+}
+.grid_title1, .grid_title2 {
+    background-color: rgb(237, 230, 230);
+    border-top: 1px dashed rgb(74, 73, 73);
+    border-bottom: 1px dotted rgb(64, 64, 64);
+}
+.grid_title1 {
+    border-right: 1px dashed rgb(20, 20, 20);
+}
+.grid_title1 p {
+    margin: 5px;
+    font-weight: bold;
+}
+.grid_title2 p {
+    margin: 5px;
+    font-weight: bold;
+}
+.grid_text1 p {
+    margin: 0;
+    font-weight: bold;
+}
+.grid_text1 span {
+    color: rgb(255, 14, 14);
+}
+.grid_text1 ul {
+    margin: 0;
+    padding: 0;
+}
+.grid_text1 {
+    padding: 0 40px
+
+}
+.grid_text1 li {
+    list-style-type: none;
+}
+.grid_text1 ul {
+    display: flex;
+    align-items: center;
+}
+.grid_button1 {
+    margin-left: auto;
+}
+.grid_button1 input {
+    background-color: rgb(78, 119, 155);
+    color: white;
+    font-size: 14px;
+    padding: 3px 10px;
+}
+.table_group {
+    padding: 0 40px 0 30px;
+}
+.table1 {
+    margin-top: 30px;
+    width: 100%;
+}
+.table_row1 th {
+    line-height: 16px;
+    text-align: center;
+}
+.table_row1 th {
+    width: 50px;
+    border: 1px solid rgb(167, 164, 164);
+    padding: 10px 0;
+}
+.table_button {
+    font-size: 10px;
+    line-height: 10px;
+    background-color: rgb(29, 78, 192);
+    color: white;
+    margin-left: 5px;
+    border-color: rgb(144, 182, 186);
+    padding: 3px;
+}
+.table_row2 th {
+    border: 1px solid rgb(144, 182, 186);
+    line-height: 20px;
+    text-align: center;
+}
+.table_row2 .table_colum {
+    width: 200px;
+    padding-left: 20px;
+    text-align: left;
+}
+.table_row2 .table_colum a {
+    color: rgb(104, 102, 102);
+}
+.table_row2 .price {
+    padding: 10px 0;
+}
+.table_row2 .price a {
+    color: rgb(103, 100, 100);
+    display: block;
+    line-height: 20px;
+}
+.sat {
+    background-color: rgb(231, 236, 247);
+}
+.sun {
+    background-color: rgb(246, 225, 225);
+}
+.table_info {
+    text-align: right;
+    padding-right: 5px;
+    padding-top: 20px;
+}
+.table_info p {
+    line-height: 0;
+    letter-spacing: -1px;
+}
+.table_info2 a {
+    color: red;
+    font-weight: bold;
+}
+.page_top {
+    text-align: right;
+    padding: 30px 0;
+}
+.page_top a {
+    color: rgb(85, 82, 82);
+}
+.summer_text h5 {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.summer_text .special {
+    padding-top: 20px;
+}
+.summer_text .special2 {
+    padding-top: 20px;
+}
+.menu1 {
+    padding-top: 20px;
+}
+.menu1_info {
+    padding-top: 20px;
+}
+.menu1_url {
+    padding-bottom: 50px;
+}
+.menu1_url a {
+    color: rgb(83, 81, 81);
+}
+.single {
+    padding-top: 20px;
+}
+.checkin1 {
+    padding-bottom: 20px;
+}
+.checkin2 {
+    padding-bottom: 20px;
+}
+.checkin3 {
+    padding-bottom: 40px;
+}
+.checkin4 {
+    padding-bottom: 40px;
+}
+.page_top2 {
+    text-align: right;
+    padding-top: 30px;
+}
+.page_top2 a {
+    color: rgb(101, 99, 99);
+    background-color: rgb(228, 215, 198);
+    padding: 5px;
+}
+.page_no a {
+    text-decoration: none;
+}
+.page_top3 {
+    text-align: right;
+    padding-bottom: 200px;
+}
+.page_top3 a {
+    color: rgb(101, 99, 99);
+    background-color: rgb(228, 215, 198);
+    padding: 5px;
+}

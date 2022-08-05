@@ -1,0 +1,2542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宿泊プラン</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/my.css">
+    <link rel="stylesheet" href="../CSS/plan.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+    <div id="page_top">
+        <a href="#"></a>
+    </div>
+    <div id="sticky1" class="fixed-top sticky1">
+        <ul class="p-0 m-0">
+            <li id="spi"><a href="../html/home.html"><img id="spiral" src="../images/spiral-2790215_640.png" alt=""></a></li>
+            <li class="li-border"><a href="../html/consept.html">コンセプト</a></li>
+            <li class="li-border"><a href="../html/house.html">お部屋</a></li>
+            <li class="li-border"><a href="../html/corse.html">お料理</a></li>
+            <li class="li-border"><a href="../html/hotspring.html">温泉</a></li>
+            <li class="li-border"><a href="../html/infomation.html">館内案内</a></li>
+            <li class="li-border"><a href="../html/manial.html">過ごし方</a></li>
+            <li class="li-border"><a href="../html/kasugai.html">春日井散策</a></li>
+            <li class="p-4" id="plan"><a href="../html/plan.html">ご宿泊プラン</a></li>
+            <li class="p-4 m-0" id="sarch">
+                <a class="text-white p-3" href="#eventsearch" data-bs-toggle="offcanvas">空室検索</a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="eventsearch" style="width: 100vw;background-color: rgba(37, 26, 26, 0.9);color:white">
+                    <div id="offheader" class="offcanvas-header">
+                        <h5 class="offcanvas-title">空室検索<br><span>SEARCH</span></h5>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div id="search_group" class="list-group list-group-flush">
+                            <ul>
+                                <li>チェックイン<br><input type="date" id="date" name="今日の日付" value="2022-07-30"></li>
+                                <li id="check_block">日付未定<br><input id="checkbox" type="checkbox"></li>
+                                <li id="check_block2">泊数<br><select name="select" id="dropdown2">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select><span>泊</span></li>
+                                <li>
+                                    人数（1部屋あたり）<br><select name="select" id="dropdown3">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select><span>名様</span>
+                                </li>
+                                <li>
+                                    部屋数<br><select name="select" id="dropdown4">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select><span>部屋</span>
+                                </li>
+                                <Li class="button">
+                                    <h5>検索</h5>
+                                </Li>
+                            </ul>
+                        </div>
+                        <div class="button2">
+                            <a id="button2_text" href="">ご宿泊プラン<span>→</span></a>  
+                            <a id="button2_text" href="">空室カレンダー<span>→</span></a>  
+                        </div>
+                        <div class="tel_search">
+                            <p>お電話のご予約<span class="maintel">TEL.</span><space>0568-00-0000</space></p>
+                            <p class="maintel_text">夕食時は、お電話がつながりにくい場合がございます。</p>
+                            <p class="maintel_text">比較的つながりやすい時間帯(11：00~17：00頃)におかけ直しください。</p>
+                            <div id="tel_search2">
+                                <a href="">ご予約状況の確認<span>→</span></a>
+                                <a href="">ご予約内容の変更<span>→</span></a>
+                                <a href="">ご予約キャンセル<span>→</span></a>
+                            </div>
+                            <div id="button_close">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="background-color: white;"></button>
+                                <P>閉じる</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="../html/kuraya.html">嵓屋だより</a></li>
+            <li><a href="../html/access.html">アクセス</a></li>
+            <li id="phone"><a href="#"></a><img id="tel" src="../images/143038.jpg" alt="">0568-00-0000</li>
+            <li><a href=""></a></li>
+            <button class="navbar-toggler ps-2 pe-1" data-bs-toggle="offcanvas" data-bs-target="#main_nav2">
+                <span id="icon2" class="navbar-dark navbar-toggler-icon"></span><br><span class="text-dark" style="font-size: 10px;">メニュー</span>
+            </button>
+            <div class="offcanvas offcanvas-start bg-dark" id="main_nav2" style="width: 100vw;">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body bg-light">
+                    <a href="#" class="text-dark pe-3">JP</a><a href="#" class="text-dark">EN</a>
+                    <div class="row mt-5">
+                        <div class="col-12 p-3 mb-3 border border-1" style="position: relative;background-color: antiquewhite;"><a class="ms-auto text-dark" href="#" style="text-decoration: none;">ご宿泊プラン</a><span class="ms-auto" style="position: absolute;right:1rem;">→</span></div>
+                        <div class="col-12 p-3 mb-3 border border-1" style="position: relative;">カレンダーから探す<span class="ms-auto" style="position: absolute;right:1rem;">→</span></div>
+                        <div class="col-12 p-3 mb-3 border border-1 text-white" style="position: relative;background-color: black;">空室検索<span style="position: absolute;right:1rem;">→</span></div>
+                    </div>
+                    <div id="hum" class="row" style="font-size: 12px;">
+                        <div class="col-12 mt-3 mb-3"><li><span>ホーム</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>コンセプト</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お部屋</span></span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お料理</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>温泉</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>館内案内</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>過ごし方</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>春日井散策</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>嵓屋だより</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>アクセス</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お知らせ</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>よくあるご質問</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>プライバシーポリシー</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お問い合わせ</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お得意様専用ページ</span></li></div>
+                    </div>
+                    <div id="logo1">
+                        <div id="insta">
+                            <img src="../images/icon-1562139_651.png" alt="">
+                        </div>
+                        <div id="facebook">
+                            <img src="../images/facebook-2935402_640.png">
+                        </div>
+                        <div id="wifi">
+                            <img src="../images/wifi-2_640.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <nav id="navbar1" class="navbar navbar-expand-xl navbar-dark bg-white p-0 fixed-top">
+        <div class="container-fluid p-0">
+                <a class="navbar-brand text-dark p-0" href="#" id="nav">
+                    <img id="spiral2" src="../images/spiral-2790215_640.png" alt="">
+                    <p id="nav-rogo1" class="p-1 m-1">嵓屋 <span>明治二八年創業</span><br>
+                    <span id="name">猪鹿蝶</span></p>
+                </a>
+                <span class="text-center ps-2 pe-2 ms-auto" style="font-size: 10px;border-left: 1px solid rgb(205, 202, 202);">
+                    <img src="../images/143038.jpg" style="width: 30px;"><br><span>TEL</span>
+                </span>
+                <span class="text-center ps-2 pe-2" style="font-size: 10px;border-left: 1px solid rgb(205, 202, 202);"><img src="../images/127914.jpg" style="width: 30px;"><br>ご予約</span>
+            <button class="navbar-toggler ps-2 pe-1" style="border-left: 1px solid rgb(205, 202, 202);" data-bs-toggle="offcanvas" data-bs-target="#main_nav">
+                <span class="navbar-toggler-icon bg-dark"></span><br><span class="text-dark" style="font-size: 10px;">メニュー</span>
+            </button>
+            <div class="offcanvas offcanvas-start" id="main_nav" style="width: 100vw;">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body bg-light">
+                    <a href="#" class="text-dark pe-3">JP</a><a href="#" class="text-dark">EN</a>
+                    <div class="row mt-5">
+                        <div class="col-12 p-3 mb-3 border border-1" style="position: relative;background-color: antiquewhite;"><a class="ms-auto text-dark" href="#" style="text-decoration: none;">ご宿泊プラン</a><span class="ms-auto" style="position: absolute;right:1rem;">→</span></div>
+                        <div class="col-12 p-3 mb-3 border border-1" style="position: relative;">カレンダーから探す<span class="ms-auto" style="position: absolute;right:1rem;">→</span></div>
+                        <div class="col-12 p-3 mb-3 border border-1 text-white" style="position: relative;background-color: black;">空室検索<span style="position: absolute;right:1rem;">→</span></div>
+                    </div>
+                    <div id="hum" class="row" style="font-size: 12px;">
+                        <div class="col-12 mt-3 mb-3"><li><span>ホーム</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>コンセプト</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お部屋</span></span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お料理</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>温泉</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>館内案内</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>過ごし方</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>春日井散策</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>嵓屋だより</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>アクセス</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お知らせ</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>よくあるご質問</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>プライバシーポリシー</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お問い合わせ</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お得意様専用ページ</span></li></div>
+                    </div>
+                    <div id="logo1">
+                        <div id="insta">
+                            <img src="../images/icon-1562139_651.png" alt="">
+                        </div>
+                        <div id="facebook">
+                            <img src="../images/facebook-2935402_640.png">
+                        </div>
+                        <div id="wifi">
+                            <img src="../images/wifi-2_640.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid p-0" style="background-color:rgb(252, 245, 235);">
+        <div id="plan_hero" class="card">
+            <img class="img-fluid" src="../images/hotel4jpg.jpg" style="object-fit: cover;">
+            <div id="plan_overlay" class="card-img-overlay text-white">
+                <div id="plan_text">
+                    <h5>ご宿泊プラン</h5>
+                    <p>PACKAGES</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="plan" class="conteiner-fluid">
+        <div id="plan_2" class="row">
+            <div class="col-6 plan_3">
+                <a href="">ご宿泊プラン一覧</a>
+                <span></span>
+            </div>
+            <div class="col-6 plan_4">
+                <a href="">空室カレンダー</a>
+            </div>
+            <a class="plan_banar" href="">GoToトラベルキャンペーンバナー</a>
+            <div class="plan_button2">
+                <div class="plan_button">
+                    <a href="#">HOMEに戻る</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color:rgb(252, 245, 235);">
+        <div id="sarch">
+            <h6>空室検索</h6>
+        </div>
+        <div id="sarch_group">
+            <div id="sarch_form" class="row m-0">
+                <div class="col-4 sarch_text1"><span>宿泊日</span></div>
+                <div class="col-8 sarch_text2">
+                    <input type="text"><span>年</span><input type="text"><span>月</span>
+                    <input type="text"><span>日</span>
+                    <input type="checkbox" name="check" id="check" checked><span>日付未定</span>
+                </div>
+                <div id="no2" class="col-4 sarch_text1"><span>人数・泊数・部屋数</span></div>
+                <div id="select" class="col-8 sarch_text2">
+                    <span>大人(1部屋あたり)</span><select name="select" id="">
+                        <option value="1">未定</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="4">3</option>
+                        <option value="5">4</option>
+                        <option value="6">5</option>
+                        <option value="7">6</option>
+                        <option value="8">7</option>
+                        <option value="9">8</option>
+                        <option value="10">9</option>
+                        <option value="11">10</option>
+                    </select><span>名</span>
+                    <select name="select" id="">
+                        <option value="1">未定</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="4">3</option>
+                        <option value="5">4</option>
+                        <option value="6">5</option>
+                        <option value="7">6</option>
+                        <option value="8">7</option>
+                        <option value="9">8</option>
+                        <option value="10">9</option>
+                        <option value="11">10</option>
+                    </select><span>泊</span>
+                    <select name="select" id="">
+                        <option value="1">未定</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="4">3</option>
+                        <option value="5">4</option>
+                        <option value="6">5</option>
+                        <option value="7">6</option>
+                        <option value="8">7</option>
+                        <option value="9">8</option>
+                        <option value="10">9</option>
+                        <option value="11">10</option>
+                    </select><span>部屋</span>
+                </div>
+                <div class="col-4 sarch_text1 no3"><span>1室もしくは1人あたりの1泊料金</span></div>
+                <div id="select2" class="col-8 sarch_text2">
+                    <select name="select" id="">
+                        <option value="1">▼下限なし</option>
+                        <option value="2">5,000円</option>
+                        <option value="3">6,000円</option>
+                        <option value="4">7,000円</option>
+                        <option value="5">8,000円</option>
+                        <option value="6">9,000円</option>
+                        <option value="7">10,000円</option>
+                        <option value="8">12,000円</option>
+                        <option value="9">14,000円</option>
+                        <option value="10">16,000円</option>
+                        <option value="11">18,000円</option>
+                        <option value="12">20,000円</option>
+                        <option value="13">30,000円</option>
+                        <option value="14">40,000円</option>
+                        <option value="15">50,000円</option>
+                    </select><span>～</span>
+                    <select name="select" id="">
+                        <option value="1">▲上限なし</option>
+                        <option value="2">5,000円</option>
+                        <option value="3">6,000円</option>
+                        <option value="4">7,000円</option>
+                        <option value="5">8,000円</option>
+                        <option value="6">9,000円</option>
+                        <option value="7">10,000円</option>
+                        <option value="8">12,000円</option>
+                        <option value="9">14,000円</option>
+                        <option value="10">16,000円</option>
+                        <option value="11">18,000円</option>
+                        <option value="12">20,000円</option>
+                        <option value="13">30,000円</option>
+                        <option value="14">40,000円</option>
+                        <option value="15">50,000円</option>
+                    </select>
+                </div>
+                <div id="sarch_button"><input type="button" value="この条件で空室状況を表示"></div>
+            </div>
+        </div>
+        <div class="plan_group">
+            <div class="plan_info">
+                <a href="">▼プラン一覧</a>
+            </div>
+            <div class="plan_info2">
+                <li><a href="">【7月～8月プラン】月替わり夏の味覚プラン</a></li>
+                <li><a href="">【9月～11月プラン】月替わり秋の味覚プラン</a></li>
+                <li><a href="">嵓屋猪鹿蝶で愉しむ、飛騨牛ステーキプラン</a></li>
+                <li><a href="">嵓屋猪鹿蝶で過ごす、お祝い、記念日プラン</a></li>
+                <li><a href="">嵓屋猪鹿蝶で愉しむ、飛騨牛【シャトーブリアン】</a></li>
+                <li><a href="">【お夕食は厳選されたステーキをお愉しみいただける鉄板フレンチ「一嵓」プラン【送迎付】】</a></li>
+                <li><a href="">嵓屋猪鹿蝶一人旅プラン</a></li>
+                <li><a href="">庄内川鵜飼プラン（予約代行）</a></li>
+            </div>
+            <div class="plan_info3">
+                <a class="plan_button1" href="">プランから探す</a>
+                <a class="planbutton2" href="">部屋から探す</a>
+                <span class="plan_info_right">
+                    <a class="plan_button3" href="">おすすめ順</a>
+                    <a href="">料金が安い順</a>
+                    <a href="">料金が高い順</a>
+                </span>
+                
+            </div>
+        </div>
+        <div class="summer_plan">
+            <div class="summer_title">
+                <h6>【7月～8月プラン】月替わり夏の味覚プラン</h6>
+            </div>
+            <div class="row m-0 summer_group">
+                <div class="col-7 summer_text">
+                    <p>西に庄内川の対岸、雄大な濃尾平野の彼方に奥美濃の山並みが一望できる和の伝統と
+                        近代間隔のデザインを調和させた明るく清潔なお部屋にて旅の情緒を感じていいただける
+                        １泊２食付プランです。
+                    </p>
+                    <p class="summer_text2">【春日井温泉　白帝の湯】</p>
+                    <p>全室半露天風呂に流れる春日井温泉は「白帝の湯」と呼ばれ、弱アルカリ性単純温泉、
+                        疲労回復、健康促進などさまざまな効能とヌルっとした泉質は肌がすべすべになると評判の
+                        美人の湯、日頃の疲れを癒してください。
+                        <br>※国宝春日井サボテンを臨む貸切風呂もございます。
+                    </p>
+                    <p class="summer_text3">【お食事】</p>
+                    <p>お食事はゆっくりと個室ダイニング【色葉繧繝】でお楽しみいただけます。お料理は、
+                        広大な自然環境から得られる四季夫々の旬の素材を中心に質と量のバランスに配慮して
+                        念入りに調理された新しい感覚の会席料理。ワインと合わせても堪能していただけます。
+                    </p>
+                    <p class="summer_text4">【チェックイン】</p>
+                    <p>15：00</p>
+                    <p>【チェックアウト】</p>
+                    <p>11：00</p>
+                    <div class="summer_text5"></div>
+                    <p>※貸切風呂のご予約は、ご到着後となります。</p>
+                    <p>※お部屋の冷蔵庫のお飲み物は無料です。</p>
+                    <p>※小学生以下（乳幼児含む）のお子様はお泊りいただけません。予めご了承ください。</p>
+                    <div class="summer_text6"></div>
+                </div>
+                <div class="col-5">
+                    <div class="center">
+                        <ul>
+                            <li><a href="#pic-01" data-bs-toggle="modal"><img class="img-fluid thumb" src="../images/food/wasyoku29.jpg" data-image="../images/food/wasyoku29.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-01" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku29.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-02" data-bs-toggle="modal"><img class="img-fluid thumb" src="../images/venice-436932_1920.jpg" data-image="../images/venice-436932_1920.jpg" style="object-fit: cover"></a></li>
+                            <div class="modal fade" id="pic-02" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/venice-436932_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-03" data-bs-toggle="modal"><img class="img-fluid thumb" src="../images/food/wasyoku2.jpg" data-image="../images/food/wasyoku2.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-03" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku2.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-04" data-bs-toggle="modal"><img class="img-fluid thumb" src="../images/fireworks-167999_1920.jpg" data-image="../images/fireworks-167999_1920.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-04" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/fireworks-167999_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-05" data-bs-toggle="modal"><img class="img-fluid thumb" src="../images/hotel1.jpg" data-image="../images/hotel1.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-05" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel1.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-06" data-bs-toggle="modal"><img class="img-fluid thumb" src="../images/hotel13.jpg" data-image="../images/hotel13.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-06" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel13.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-07" data-bs-toggle="modal"><img class="img-fluid thumb" src="../images/hotel9.jpg" data-image="../images/hotel9.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-07" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel9.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                        <div>
+                            <img src="../images/food/wasyoku29.jpg" id="bigimg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row grid_row">
+                    <div class="col-2 grid_title1"><p>お食事</p></div>
+                    <div class="col-5 grid_title2"><P>朝食あり・夕食あり</P></div>
+                </div>
+                <div class="grid_text1">
+                    <ul>
+                        <li>
+                            <p>大人1名様あたりの料金<span>(消費税込み)</span></p>
+                            <p>(1泊1室<select name="select">
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                            </select>)名様ご利用時 単位：円)</p>
+                        </li>
+                        <li class="grid_button1">
+                            <input type="button" value="後の期間▶">
+                        </li>
+                    </ul>
+                </div>
+                <div class="table_group">
+                    <table class="table1">
+                        <tr class="table_row1">
+                            <th class="table_colum">部屋タイプ</th>
+                            <th>プラン<br>詳細</th>
+                            <th>7/27<br>(水)</th>
+                            <th>7/28<br>(木)</th>
+                            <th>7/29<br>(金)</th>
+                            <th class="sat">7/30<br>(土)</th>
+                            <th class="sun">7/31<br>(日)</th>
+                            <th>8/1<br>(月)</th>
+                            <th>8/2<br>(火)</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">キャッスル、ラグジュアリースイート【ストーンカウチ付にリニューアル】国宝春日井サボテンに最も近い特別室</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>-</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">和モダンデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>-</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th class="price"><a href="">△<br>45,100円</a></th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">kasugaiデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>-</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th class="price"><a href="">〇<br>47,300円</a></th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">SHOWNAIプレミアムスイート　2階春日井サボテン展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>-</th>
+                            <th class="price"><a href="">〇<br>50,600円</a></th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th class="price"><a href="">△<br>51,700円</a></th>
+                            <th>×</th>
+                        </tr><tr class="table_row2">
+                            <th class="table_colum"><a href="">SHOWNAIエグゼクティブスイート　2階春日井サボテン展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>-</th>
+                            <th class="price"><a href="">△<br>50,600円</a></th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th class="price"><a href="">△<br>51,700円</a></th>
+                            <th class="price"><a href="">〇<br>51,700円</a></th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">リバーラグジュアリースイート春日井サボテンと庄内川の清流を臨む特別室</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>-</th>
+                            <th class="price"><a href="">〇<br>61,600円</a></th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                    </table>
+                    <div class="table_info">
+                        <p>〇：空室あり　△：残りわずか　×：満室　‐：設定なし</p>
+                        <p class="table_info2"><a href="">※料金は消費税込みです。</a></p>
+                        <p>※上記の表示は、空室検索の紹介時点の状況ですので、予約時にお取りできない場合もございます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page_top">
+                <a href="#">ページ先頭へ</a>
+            </div>
+        </div>
+        <div class="summer_plan">
+            <div class="summer_title">
+                <h6>【9月～11月プラン】月替わり秋の味覚プラン</h6>
+            </div>
+            <div class="row m-0 summer_group">
+                <div class="col-7 summer_text">
+                    <p>西に庄内川の対岸、雄大な濃尾平野の彼方に奥美濃の山並みが一望できる和の伝統と
+                        近代間隔のデザインを調和させた明るく清潔なお部屋にて旅の情緒を感じていいただける
+                        １泊２食付プランです。
+                    </p>
+                    <p class="summer_text2">【春日井温泉　白帝の湯】</p>
+                    <p>全室半露天風呂に流れる春日井温泉は「白帝の湯」と呼ばれ、弱アルカリ性単純温泉、
+                        疲労回復、健康促進などさまざまな効能とヌルっとした泉質は肌がすべすべになると評判の
+                        美人の湯、日頃の疲れを癒してください。
+                        <br>※国宝春日井サボテンを臨む貸切風呂もございます。
+                    </p>
+                    <p class="summer_text3">【お食事】</p>
+                    <p>お食事はゆっくりと個室ダイニング【色葉繧繝】でお楽しみいただけます。お料理は、
+                        広大な自然環境から得られる四季夫々の旬の素材を中心に質と量のバランスに配慮して
+                        念入りに調理された新しい感覚の会席料理。ワインと合わせても堪能していただけます。
+                    </p>
+                    <p class="summer_text4">【チェックイン】</p>
+                    <p>15：00</p>
+                    <p>【チェックアウト】</p>
+                    <p>11：00</p>
+                    <div class="summer_text5"></div>
+                    <p>※貸切風呂のご予約は、ご到着後となります。</p>
+                    <p>※お部屋の冷蔵庫のお飲み物は無料です。</p>
+                    <p>※小学生以下（乳幼児含む）のお子様はお泊りいただけません。予めご了承ください。</p>
+                    <div class="summer_text6"></div>
+                </div>
+                <div class="col-5">
+                    <div class="center">
+                        <ul>
+                            <li><a href="#pic-01" data-bs-toggle="modal"><img class="img-fluid thumb2" src="../images/food/wasyoku29.jpg" data-image="../images/food/wasyoku29.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-01" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku29.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-02" data-bs-toggle="modal"><img class="img-fluid thumb2" src="../images/venice-436932_1920.jpg" data-image="../images/venice-436932_1920.jpg" style="object-fit: cover"></a></li>
+                            <div class="modal fade" id="pic-02" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/venice-436932_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-03" data-bs-toggle="modal"><img class="img-fluid thumb2" src="../images/food/wasyoku2.jpg" data-image="../images/food/wasyoku2.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-03" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku2.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-04" data-bs-toggle="modal"><img class="img-fluid thumb2" src="../images/fireworks-167999_1920.jpg" data-image="../images/fireworks-167999_1920.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-04" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/fireworks-167999_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-05" data-bs-toggle="modal"><img class="img-fluid thumb2" src="../images/hotel1.jpg" data-image="../images/hotel1.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-05" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel1.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-06" data-bs-toggle="modal"><img class="img-fluid thumb2" src="../images/hotel13.jpg" data-image="../images/hotel13.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-06" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel13.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-07" data-bs-toggle="modal"><img class="img-fluid thumb2" src="../images/hotel9.jpg" data-image="../images/hotel9.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-07" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel9.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                        <div>
+                            <img src="../images/food/wasyoku29.jpg" id="bigimg2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row grid_row">
+                    <div class="col-2 grid_title1"><p>お食事</p></div>
+                    <div class="col-5 grid_title2"><P>朝食あり・夕食あり</P></div>
+                </div>
+                <div class="grid_text1">
+                    <ul>
+                        <li>
+                            <p>大人1名様あたりの料金<span>(消費税込み)</span></p>
+                            <p>(1泊1室<select name="select">
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                            </select>)名様ご利用時 単位：円)</p>
+                        </li>
+                        <li class="grid_button1">
+                            <input type="button" value="後の期間▶">
+                        </li>
+                    </ul>
+                </div>
+                <div class="table_group">
+                    <table class="table1">
+                        <tr class="table_row1">
+                            <th class="table_colum">部屋タイプ</th>
+                            <th>プラン<br>詳細</th>
+                            <th>9/1<br>(木)</th>
+                            <th>9/2<br>(金)</th>
+                            <th class="sat">9/3<br>(土)</th>
+                            <th class="sun">9/4<br>(日)</th>
+                            <th>9/5<br>(月)</th>
+                            <th>9/6<br>(火)</th>
+                            <th>9/7<br>(水)</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">キャッスル、ラグジュアリースイート【ストーンカウチ付にリニューアル】国宝春日井サボテンに最も近い特別室</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th class="price"><a href="">〇<br>61,600円</a></th>
+                            <th>×</th>
+                            <th class="price"><a href="">〇<br>61,600円</a></th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">和モダンデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">kasugaiデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun price"><a href="">〇<br>47,300円</a></th>
+                            <th class="price"><a href="">〇<br>46,200円</a></th>
+                            <th class="price"><a href="">△<br>46,200円</a></th>
+                            <th class="price"><a href="">〇<br>46,200円</a></th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">SHOWNAIプレミアムスイート　2階春日井サボテン展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th class="price"><a href="">〇<br>50,600円</a></th>
+                            <th class="price"><a href="">〇<br>50,600円</a></th>
+                            <th class="price"><a href="">〇<br>50,600円</a></th>
+                        </tr><tr class="table_row2">
+                            <th class="table_colum"><a href="">SHOWNAIエグゼクティブスイート　2階春日井サボテン展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun price"><a href="">〇<br>51,700円</a></th>
+                            <th class="price"><a href="">〇<br>50,600円</a></th>
+                            <th class="price"><a href="">〇<br>50,600円</a></th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">リバーラグジュアリースイート春日井サボテンと庄内川の清流を臨む特別室</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun price"><a href="">〇<br>62,700円</a></th>
+                            <th>×</th>
+                            <th class="price"><a href="">〇<br>61,600円</a></th>
+                            <th>×</th>
+                        </tr>
+                    </table>
+                    <div class="table_info">
+                        <p>〇：空室あり　△：残りわずか　×：満室　‐：設定なし</p>
+                        <p class="table_info2"><a href="">※料金は消費税込みです。</a></p>
+                        <p>※上記の表示は、空室検索の紹介時点の状況ですので、予約時にお取りできない場合もございます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page_top">
+                <a href="#">ページ先頭へ</a>
+            </div>
+        </div>
+        <div class="summer_plan">
+            <div class="summer_title">
+                <h6>嵓屋猪鹿蝶で愉しむ、飛騨牛ステーキプラン</h6>
+            </div>
+            <div class="row m-0 summer_group">
+                <div class="col-7 summer_text">
+                    <p>お肉好きのお客様に猪鹿蝶から飛騨牛プランをご用意いたしました。</p>
+                    <p class="summer_beef">月替わり献立のメイン料理を飛騨牛ヒレステーキを中心にお楽しみいただけます。</p>
+                    <p>西に庄内川の対岸、雄大な濃尾平野の彼方に奥美濃の山並みが一望できる和の伝統と
+                        近代間隔のデザインを調和させた明るく清潔なお部屋にて旅の情緒を感じていいただける
+                        １泊２食付プランです。
+                    </p>
+                    <p class="summer_text2">【春日井温泉　白帝の湯】</p>
+                    <p>全室半露天風呂に流れる春日井温泉は「白帝の湯」と呼ばれ、弱アルカリ性単純温泉、
+                        疲労回復、健康促進などさまざまな効能とヌルっとした泉質は肌がすべすべになると評判の
+                        美人の湯、日頃の疲れを癒してください。
+                        <br>※国宝春日井サボテンを臨む貸切風呂もございます。
+                    </p>
+                    <p class="summer_text3">【お食事】</p>
+                    <p>お食事はゆっくりと個室ダイニング【色葉繧繝】でお楽しみいただけます。お料理は、
+                        広大な自然環境から得られる四季夫々の旬の素材を中心に質と量のバランスに配慮して
+                        念入りに調理された新しい感覚の会席料理。ワインと合わせても堪能していただけます。
+                    </p>
+                    <p class="summer_text4">【チェックイン】</p>
+                    <p>15：00</p>
+                    <p>【チェックアウト】</p>
+                    <p>11：00</p>
+                    <div class="summer_text5"></div>
+                    <p>※貸切風呂のご予約は、ご到着後となります。</p>
+                    <p>※お部屋の冷蔵庫のお飲み物は無料です。</p>
+                    <p>※小学生以下（乳幼児含む）のお子様はお泊りいただけません。予めご了承ください。</p>
+                    <div class="summer_text6"></div>
+                </div>
+                <div class="col-5">
+                    <div class="center">
+                        <ul>
+                            <li><a href="#pib-01" data-bs-toggle="modal"><img class="img-fluid thumb3" src="../images/food/wasyoku16.jpg" data-image="../images/food/wasyoku16.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pib-01" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku16.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-02" data-bs-toggle="modal"><img class="img-fluid thumb3" src="../images/venice-436932_1920.jpg" data-image="../images/venice-436932_1920.jpg" style="object-fit: cover"></a></li>
+                            <div class="modal fade" id="pic-02" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/venice-436932_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-03" data-bs-toggle="modal"><img class="img-fluid thumb3" src="../images/food/wasyoku2.jpg" data-image="../images/food/wasyoku2.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-03" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku2.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-04" data-bs-toggle="modal"><img class="img-fluid thumb3" src="../images/fireworks-167999_1920.jpg" data-image="../images/fireworks-167999_1920.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-04" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/fireworks-167999_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-05" data-bs-toggle="modal"><img class="img-fluid thumb3" src="../images/hotel1.jpg" data-image="../images/hotel1.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-05" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel1.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-06" data-bs-toggle="modal"><img class="img-fluid thumb3" src="../images/hotel13.jpg" data-image="../images/hotel13.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-06" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel13.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-07" data-bs-toggle="modal"><img class="img-fluid thumb3" src="../images/hotel9.jpg" data-image="../images/hotel9.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-07" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel9.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                        <div>
+                            <img src="../images/food/wasyoku16.jpg" id="bigimg3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row grid_row">
+                    <div class="col-2 grid_title1"><p>お食事</p></div>
+                    <div class="col-5 grid_title2"><P>朝食あり・夕食あり</P></div>
+                </div>
+                <div class="grid_text1">
+                    <ul>
+                        <li>
+                            <p>大人1名様あたりの料金<span>(消費税込み)</span></p>
+                            <p>(1泊1室<select name="select">
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                            </select>)名様ご利用時 単位：円)</p>
+                        </li>
+                        <li class="grid_button1">
+                            <input type="button" value="後の期間▶">
+                        </li>
+                    </ul>
+                </div>
+                <div class="table_group">
+                    <table class="table1">
+                        <tr class="table_row1">
+                            <th class="table_colum">部屋タイプ</th>
+                            <th>プラン<br>詳細</th>
+                            <th>8/3<br>(水)</th>
+                            <th>8/4<br>(木)</th>
+                            <th>8/5<br>(金)</th>
+                            <th class="sat">8/6<br>(土)</th>
+                            <th class="sun">8/7<br>(日)</th>
+                            <th>8/8<br>(月)</th>
+                            <th>8/9<br>(火)</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">キャッスル、ラグジュアリースイート【ストーンカウチ付にリニューアル】国宝春日井サボテンに最も近い特別室</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">和モダンデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">kasugaiデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">SHOWNAIプレミアムスイート　2階春日井サボテン展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr><tr class="table_row2">
+                            <th class="table_colum"><a href="">SHOWNAIエグゼクティブスイート　2階春日井サボテン展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">リバーラグジュアリースイート春日井サボテンと庄内川の清流を臨む特別室</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                    </table>
+                    <div class="table_info">
+                        <p>〇：空室あり　△：残りわずか　×：満室　‐：設定なし</p>
+                        <p class="table_info2"><a href="">※料金は消費税込みです。</a></p>
+                        <p>※上記の表示は、空室検索の紹介時点の状況ですので、予約時にお取りできない場合もございます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page_top">
+                <a href="#">ページ先頭へ</a>
+            </div>
+        </div>
+        <div class="summer_plan">
+            <div class="summer_title">
+                <h6>嵓屋猪鹿蝶で過ごす、お祝い、記念日プラン</h6>
+            </div>
+            <div class="row m-0 summer_group">
+                <div class="col-7 summer_text">
+                    <h5>嵓屋猪鹿蝶で過ごす記念日、お祝いプラン</h5>
+                    <p>嵓屋猪鹿蝶で、大切な記念日にご利用いただけますよう、記念日プランをご用意いたしました。お誕生日、ご結婚記念日、
+                        長寿祝い（還暦、米寿、喜寿）等、ご家族、お仲間でご利用ください。（長寿祝いの方には記念写真用にチャンチャンコセットを
+                        お貸しできます。）
+                    </p>
+                    <p class="special">◎特典◎</p>
+                    <p>お夕食メニューにシャンパーニュ（ﾊｰﾌﾎﾞﾄﾙ）１予約につき１本お出しします。３～４名様でご予約の方はフルボトルになります。</p>
+                    <p class="special2">【プラス3,850円（税込み）でケーキをご用意できます。】</p>
+                    <p>【プラス3,300円（税込み）でフラワーアレンジメントをご用意できます。】</p>
+                    <p class="summer_text2">【春日井温泉　白帝の湯】</p>
+                    <p>全室半露天風呂に流れる春日井温泉は「白帝の湯」と呼ばれ、弱アルカリ性単純温泉、
+                        疲労回復、健康促進などさまざまな効能とヌルっとした泉質は肌がすべすべになると評判の
+                        美人の湯、日頃の疲れを癒してください。
+                        <br>※国宝春日井サボテンを臨む貸切風呂もございます。
+                    </p>
+                    <p class="summer_text3">【お食事】</p>
+                    <p>お食事はゆっくりと個室ダイニング【色葉繧繝】でお楽しみいただけます。お料理は、
+                        広大な自然環境から得られる四季夫々の旬の素材を中心に質と量のバランスに配慮して
+                        念入りに調理された新しい感覚の会席料理。ワインと合わせても堪能していただけます。
+                    </p>
+                    <p class="summer_text4">【チェックイン】</p>
+                    <p>15：00</p>
+                    <p>【チェックアウト】</p>
+                    <p>11：00</p>
+                    <div class="summer_text5"></div>
+                    <p>※貸切風呂のご予約は、ご到着後となります。</p>
+                    <p>※お部屋の冷蔵庫のお飲み物は無料です。</p>
+                    <p>※小学生以下（乳幼児含む）のお子様はお泊りいただけません。予めご了承ください。</p>
+                    <div class="summer_text6"></div>
+                </div>
+                <div class="col-5">
+                    <div class="center">
+                        <ul>
+                            <li><a href="#pic-01" data-bs-toggle="modal"><img class="img-fluid thumb4" src="../images/food/wasyoku29.jpg" data-image="../images/food/wasyoku29.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-01" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku29.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-02" data-bs-toggle="modal"><img class="img-fluid thumb4" src="../images/venice-436932_1920.jpg" data-image="../images/venice-436932_1920.jpg" style="object-fit: cover"></a></li>
+                            <div class="modal fade" id="pic-02" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/venice-436932_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-03" data-bs-toggle="modal"><img class="img-fluid thumb4" src="../images/food/wasyoku2.jpg" data-image="../images/food/wasyoku2.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-03" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku2.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-04" data-bs-toggle="modal"><img class="img-fluid thumb4" src="../images/fireworks-167999_1920.jpg" data-image="../images/fireworks-167999_1920.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-04" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/fireworks-167999_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-05" data-bs-toggle="modal"><img class="img-fluid thumb4" src="../images/hotel1.jpg" data-image="../images/hotel1.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-05" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel1.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-06" data-bs-toggle="modal"><img class="img-fluid thumb4" src="../images/hotel13.jpg" data-image="../images/hotel13.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-06" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel13.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-07" data-bs-toggle="modal"><img class="img-fluid thumb4" src="../images/hotel9.jpg" data-image="../images/hotel9.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-07" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel9.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                        <div>
+                            <img src="../images/food/wasyoku29.jpg" id="bigimg4">
+                        </div>
+                    </div>
+                </div>
+                <div class="row grid_row">
+                    <div class="col-2 grid_title1"><p>お食事</p></div>
+                    <div class="col-5 grid_title2"><P>朝食あり・夕食あり</P></div>
+                </div>
+                <div class="grid_text1">
+                    <ul>
+                        <li>
+                            <p>大人1名様あたりの料金<span>(消費税込み)</span></p>
+                            <p>(1泊1室<select name="select">
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                            </select>)名様ご利用時 単位：円)</p>
+                        </li>
+                        <li class="grid_button1">
+                            <input type="button" value="後の期間▶">
+                        </li>
+                    </ul>
+                </div>
+                <div class="table_group">
+                    <table class="table1">
+                        <tr class="table_row1">
+                            <th class="table_colum">部屋タイプ</th>
+                            <th>プラン<br>詳細</th>
+                            <th>7/28<br>(木)</th>
+                            <th>7/29<br>(金)</th>
+                            <th class="sat">7/30<br>(土)</th>
+                            <th class="sun">7/31<br>(日)</th>
+                            <th>8/1<br>(月)</th>
+                            <th>8/2<br>(火)</th>
+                            <th>8/3<br>(水)</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">キャッスル、ラグジュアリースイート【ストーンカウチ付にリニューアル】国宝春日井サボテンに最も近い特別室</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">和モダンデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th class="price">△<br>47,850円</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">kasugaiデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th class="price"><a href="">〇<br>50,050円</a></th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">SHOWNAIプレミアムスイート　2階春日井サボテン展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th class="price"><a href="">〇<br>53,350円</a></th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th class="price"><a href="">△<br>54,450円</a></th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr><tr class="table_row2">
+                            <th class="table_colum"><a href="">SHOWNAIエグゼクティブスイート　2階春日井サボテン展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th class="price"><a href="">△<br>53,350円</a></th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th class="price"><a href="">△<br>54,450円</a></th>
+                            <th class="price"><a href="">〇<br>54,450円</a></th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">リバーラグジュアリースイート春日井サボテンと庄内川の清流を臨む特別室</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th class="price"><a href="">〇<br>64,350円</a></th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                    </table>
+                    <div class="table_info">
+                        <p>〇：空室あり　△：残りわずか　×：満室　‐：設定なし</p>
+                        <p class="table_info2"><a href="">※料金は消費税込みです。</a></p>
+                        <p>※上記の表示は、空室検索の紹介時点の状況ですので、予約時にお取りできない場合もございます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page_top">
+                <a href="#">ページ先頭へ</a>
+            </div>
+        </div>
+        <div class="summer_plan">
+            <div class="summer_title">
+                <h6>嵓屋猪鹿蝶で愉しむ、飛騨牛【シャトーブリアン】</h6>
+            </div>
+            <div class="row m-0 summer_group">
+                <div class="col-7 summer_text">
+                    <p>お肉好きのお客様に猪鹿蝶から飛騨牛の最高級シャトーブリアンをメインでお愉しみいただけるプランをご用意いたしました。</p>
+                    <p>2名で200g、4名で400gでシェアしていただきながらお召し上がりいただけます。</p>
+                    <p>※こちらのプランは、1室2名様か4名様でのご予約となります。</p>
+                    <p class="summer_text2">【春日井温泉　白帝の湯】</p>
+                    <p>全室半露天風呂に流れる春日井温泉は「白帝の湯」と呼ばれ、弱アルカリ性単純温泉、
+                        疲労回復、健康促進などさまざまな効能とヌルっとした泉質は肌がすべすべになると評判の
+                        美人の湯、日頃の疲れを癒してください。
+                        <br>※国宝春日井サボテンを臨む貸切風呂もございます。
+                    </p>
+                    <p class="summer_text3">【お食事】</p>
+                    <p>お食事はゆっくりと個室ダイニング【色葉繧繝】でお楽しみいただけます。お料理は、
+                        広大な自然環境から得られる四季夫々の旬の素材を中心に質と量のバランスに配慮して
+                        念入りに調理された新しい感覚の会席料理。ワインと合わせても堪能していただけます。
+                    </p>
+                    <p class="summer_text4">【チェックイン】</p>
+                    <p>15：00</p>
+                    <p>【チェックアウト】</p>
+                    <p>11：00</p>
+                    <div class="summer_text5"></div>
+                    <p>※貸切風呂のご予約は、ご到着後となります。</p>
+                    <p>※お部屋の冷蔵庫のお飲み物は無料です。</p>
+                    <p>※小学生以下（乳幼児含む）のお子様はお泊りいただけません。予めご了承ください。</p>
+                    <div class="summer_text6"></div>
+                </div>
+                <div class="col-5">
+                    <div class="center">
+                        <ul>
+                            <li><a href="#pic-01" data-bs-toggle="modal"><img class="img-fluid thumb5" src="../images/food/wasyoku29.jpg" data-image="../images/food/wasyoku29.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-01" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku29.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-02" data-bs-toggle="modal"><img class="img-fluid thumb5" src="../images/venice-436932_1920.jpg" data-image="../images/venice-436932_1920.jpg" style="object-fit: cover"></a></li>
+                            <div class="modal fade" id="pic-02" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/venice-436932_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-03" data-bs-toggle="modal"><img class="img-fluid thumb5" src="../images/food/wasyoku2.jpg" data-image="../images/food/wasyoku2.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-03" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku2.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-04" data-bs-toggle="modal"><img class="img-fluid thumb5" src="../images/fireworks-167999_1920.jpg" data-image="../images/fireworks-167999_1920.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-04" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/fireworks-167999_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-05" data-bs-toggle="modal"><img class="img-fluid thumb5" src="../images/hotel1.jpg" data-image="../images/hotel1.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-05" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel1.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-06" data-bs-toggle="modal"><img class="img-fluid thumb5" src="../images/hotel13.jpg" data-image="../images/hotel13.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-06" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel13.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-07" data-bs-toggle="modal"><img class="img-fluid thumb5" src="../images/hotel9.jpg" data-image="../images/hotel9.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-07" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel9.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                        <div>
+                            <img src="../images/food/wasyoku29.jpg" id="bigimg5">
+                        </div>
+                    </div>
+                </div>
+                <div class="row grid_row">
+                    <div class="col-2 grid_title1"><p>お食事</p></div>
+                    <div class="col-5 grid_title2"><P>朝食あり・夕食あり</P></div>
+                </div>
+                <div class="grid_text1">
+                    <ul>
+                        <li>
+                            <p>大人1名様あたりの料金<span>(消費税込み)</span></p>
+                            <p>(1泊1室<select name="select">
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                            </select>)名様ご利用時 単位：円)</p>
+                        </li>
+                        <li class="grid_button1">
+                            <input type="button" value="後の期間▶">
+                        </li>
+                    </ul>
+                </div>
+                <div class="table_group">
+                    <table class="table1">
+                        <tr class="table_row1">
+                            <th class="table_colum">部屋タイプ</th>
+                            <th>プラン<br>詳細</th>
+                            <th>8/3<br>(水)</th>
+                            <th>8/4<br>(木)</th>
+                            <th>8/5<br>(金)</th>
+                            <th class="sat">8/6<br>(土)</th>
+                            <th class="sun">8/7<br>(日)</th>
+                            <th>8/8<br>(月)</th>
+                            <th>8/9<br>(火)</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">キャッスル、ラグジュアリースイート【ストーンカウチ付にリニューアル】国宝春日井サボテンに最も近い特別室</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">和モダンデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">kasugaiデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">SHOWNAIプレミアムスイート　2階春日井サボテン展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr><tr class="table_row2">
+                            <th class="table_colum"><a href="">SHOWNAIエグゼクティブスイート　2階春日井サボテン展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">リバーラグジュアリースイート春日井サボテンと庄内川の清流を臨む特別室</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                    </table>
+                    <div class="table_info">
+                        <p>〇：空室あり　△：残りわずか　×：満室　‐：設定なし</p>
+                        <p class="table_info2"><a href="">※料金は消費税込みです。</a></p>
+                        <p>※上記の表示は、空室検索の紹介時点の状況ですので、予約時にお取りできない場合もございます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page_top">
+                <a href="#">ページ先頭へ</a>
+            </div>
+        </div>
+        <div class="summer_plan">
+            <div class="summer_title">
+                <h6>【お夕食は厳選されたステーキをお愉しみいただける鉄板フレンチ「一嵓」プラン（送迎付）】</h6>
+            </div>
+            <div class="row m-0 summer_group">
+                <div class="col-7 summer_text">
+                    <p>お夕食を有形文化財の古民家を改装した鉄板フレンチ「一嵓」似てコース料理をお召し上がりいただけるプランです。</p>
+                    <p class="menu1">◆メニュー◆</p>
+                    <p>アミューズ</p>
+                    <p>オードブル</p>
+                    <p>フォアグラ</p>
+                    <p>スープ</p>
+                    <p>魚料理</p>
+                    <p>一嵓特製季節のサラダ</p>
+                    <p>ステーキ</p>
+                    <p>土鍋ご飯、味噌汁、香の物</p>
+                    <p>デザートコーヒー</p>
+                    <p class="menu1_info">※朝食は嵓屋猪鹿蝶でお召し上がりいただきます。</p>
+                    <p>※フレンチレストラン「一嵓」までは猪鹿蝶から車で5分程度の場所にあります。（送迎付きです。）</p>
+                    <p class="menu1_url">URL　<a href="">https://www.inosikatyou.jp/</a></p>
+                    <p class="summer_text2">【春日井温泉　白帝の湯】</p>
+                    <p>全室半露天風呂に流れる春日井温泉は「白帝の湯」と呼ばれ、弱アルカリ性単純温泉、
+                        疲労回復、健康促進などさまざまな効能とヌルっとした泉質は肌がすべすべになると評判の
+                        美人の湯、日頃の疲れを癒してください。
+                        <br>※国宝春日井サボテンを臨む貸切風呂もございます。
+                    </p>
+                    <p class="summer_text3">【お食事】</p>
+                    <p>お食事はゆっくりと個室ダイニング【色葉繧繝】でお楽しみいただけます。お料理は、
+                        広大な自然環境から得られる四季夫々の旬の素材を中心に質と量のバランスに配慮して
+                        念入りに調理された新しい感覚の会席料理。ワインと合わせても堪能していただけます。
+                    </p>
+                    <p class="summer_text4">【チェックイン】</p>
+                    <p>15：00</p>
+                    <p>【チェックアウト】</p>
+                    <p>11：00</p>
+                    <div class="summer_text5"></div>
+                    <p>※貸切風呂のご予約は、ご到着後となります。</p>
+                    <p>※お部屋の冷蔵庫のお飲み物は無料です。</p>
+                    <p>※小学生以下（乳幼児含む）のお子様はお泊りいただけません。予めご了承ください。</p>
+                    <div class="summer_text6"></div>
+                </div>
+                <div class="col-5">
+                    <div class="center">
+                        <ul>
+                            <li><a href="#pic-01" data-bs-toggle="modal"><img class="img-fluid thumb6" src="../images/food/wasyoku29.jpg" data-image="../images/food/wasyoku29.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-01" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku29.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-02" data-bs-toggle="modal"><img class="img-fluid thumb6" src="../images/venice-436932_1920.jpg" data-image="../images/venice-436932_1920.jpg" style="object-fit: cover"></a></li>
+                            <div class="modal fade" id="pic-02" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/venice-436932_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-03" data-bs-toggle="modal"><img class="img-fluid thumb6" src="../images/food/wasyoku2.jpg" data-image="../images/food/wasyoku2.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-03" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku2.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-04" data-bs-toggle="modal"><img class="img-fluid thumb6" src="../images/fireworks-167999_1920.jpg" data-image="../images/fireworks-167999_1920.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-04" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/fireworks-167999_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-05" data-bs-toggle="modal"><img class="img-fluid thumb6" src="../images/hotel1.jpg" data-image="../images/hotel1.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-05" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel1.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-06" data-bs-toggle="modal"><img class="img-fluid thumb6" src="../images/hotel13.jpg" data-image="../images/hotel13.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-06" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel13.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-07" data-bs-toggle="modal"><img class="img-fluid thumb6" src="../images/hotel9.jpg" data-image="../images/hotel9.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-07" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel9.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                        <div>
+                            <img src="../images/food/wasyoku29.jpg" id="bigimg6">
+                        </div>
+                    </div>
+                </div>
+                <div class="row grid_row">
+                    <div class="col-2 grid_title1"><p>お食事</p></div>
+                    <div class="col-5 grid_title2"><P>朝食あり・夕食あり</P></div>
+                </div>
+                <div class="grid_text1">
+                    <ul>
+                        <li>
+                            <p>大人1名様あたりの料金<span>(消費税込み)</span></p>
+                            <p>(1泊1室<select name="select">
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                            </select>)名様ご利用時 単位：円)</p>
+                        </li>
+                        <li class="grid_button1">
+                            <input type="button" value="後の期間▶">
+                        </li>
+                    </ul>
+                </div>
+                <div class="table_group">
+                    <table class="table1">
+                        <tr class="table_row1">
+                            <th class="table_colum">部屋タイプ</th>
+                            <th>プラン<br>詳細</th>
+                            <th>8/3<br>(水)</th>
+                            <th>8/4<br>(木)</th>
+                            <th>8/5<br>(金)</th>
+                            <th class="sat">8/6<br>(土)</th>
+                            <th class="sun">8/7<br>(日)</th>
+                            <th>8/8<br>(月)</th>
+                            <th>8/9<br>(火)</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">キャッスル、ラグジュアリースイート【ストーンカウチ付にリニューアル】国宝春日井サボテンに最も近い特別室</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">和モダンデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">kasugaiデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">SHOWNAIプレミアムスイート　2階春日井サボテン展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr><tr class="table_row2">
+                            <th class="table_colum"><a href="">SHOWNAIエグゼクティブスイート　2階春日井サボテン展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">リバーラグジュアリースイート春日井サボテンと庄内川の清流を臨む特別室</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                    </table>
+                    <div class="table_info">
+                        <p>〇：空室あり　△：残りわずか　×：満室　‐：設定なし</p>
+                        <p class="table_info2"><a href="">※料金は消費税込みです。</a></p>
+                        <p>※上記の表示は、空室検索の紹介時点の状況ですので、予約時にお取りできない場合もございます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page_top">
+                <a href="#">ページ先頭へ</a>
+            </div>
+        </div>
+        <div class="summer_plan">
+            <div class="summer_title">
+                <h6>嵓屋猪鹿蝶へ一人旅プラン</h6>
+            </div>
+            <div class="row m-0 summer_group">
+                <div class="col-7 summer_text">
+                    <p>1人で時間を忘れてゆっくりしたい。1人で自由に旅を楽しみたい。そんな方に最適な一人旅プランをご用意いたしました。
+                        お夕食時にはシャンパンのハーフ、またはノンアルコールのスパークリングワインをお付けいたします。
+                    </p>
+                    <p class="single">西に庄内川の対岸、雄大な濃尾平野の彼方に奥美濃の山並みが一望できる和の伝統と近代感覚のデザインを調和させた明るく清潔なお部屋にて
+                        旅の情緒を感じていただける1杯2食付きプランです。</p>
+                    <p class="summer_text2">【春日井温泉　白帝の湯】</p>
+                    <p>全室半露天風呂に流れる春日井温泉は「白帝の湯」と呼ばれ、弱アルカリ性単純温泉、
+                        疲労回復、健康促進などさまざまな効能とヌルっとした泉質は肌がすべすべになると評判の
+                        美人の湯、日頃の疲れを癒してください。
+                        <br>※国宝春日井サボテンを臨む貸切風呂もございます。
+                    </p>
+                    <p class="summer_text3">【お食事】</p>
+                    <p>お食事はゆっくりと個室ダイニング【色葉繧繝】でお楽しみいただけます。お料理は、
+                        広大な自然環境から得られる四季夫々の旬の素材を中心に質と量のバランスに配慮して
+                        念入りに調理された新しい感覚の会席料理。ワインと合わせても堪能していただけます。
+                    </p>
+                    <p class="summer_text4">【チェックイン】</p>
+                    <p>15：00</p>
+                    <p>【チェックアウト】</p>
+                    <p>11：00</p>
+                    <div class="summer_text5"></div>
+                    <p>※貸切風呂のご予約は、ご到着後となります。</p>
+                    <p>※お部屋の冷蔵庫のお飲み物は無料です。</p>
+                    <p>※小学生以下（乳幼児含む）のお子様はお泊りいただけません。予めご了承ください。</p>
+                    <div class="summer_text6"></div>
+                </div>
+                <div class="col-5">
+                    <div class="center">
+                        <ul>
+                            <li><a href="#pic-01" data-bs-toggle="modal"><img class="img-fluid thumb7" src="../images/food/wasyoku29.jpg" data-image="../images/food/wasyoku29.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-01" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku29.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-02" data-bs-toggle="modal"><img class="img-fluid thumb7" src="../images/venice-436932_1920.jpg" data-image="../images/venice-436932_1920.jpg" style="object-fit: cover"></a></li>
+                            <div class="modal fade" id="pic-02" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/venice-436932_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-03" data-bs-toggle="modal"><img class="img-fluid thumb7" src="../images/food/wasyoku2.jpg" data-image="../images/food/wasyoku2.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-03" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku2.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-04" data-bs-toggle="modal"><img class="img-fluid thumb7" src="../images/fireworks-167999_1920.jpg" data-image="../images/fireworks-167999_1920.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-04" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/fireworks-167999_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-05" data-bs-toggle="modal"><img class="img-fluid thumb7" src="../images/hotel1.jpg" data-image="../images/hotel1.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-05" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel1.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-06" data-bs-toggle="modal"><img class="img-fluid thumb7" src="../images/hotel13.jpg" data-image="../images/hotel13.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-06" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel13.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-07" data-bs-toggle="modal"><img class="img-fluid thumb7" src="../images/hotel9.jpg" data-image="../images/hotel9.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-07" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel9.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                        <div>
+                            <img src="../images/food/wasyoku29.jpg" id="bigimg7">
+                        </div>
+                    </div>
+                </div>
+                <div class="row grid_row">
+                    <div class="col-2 grid_title1"><p>お食事</p></div>
+                    <div class="col-5 grid_title2"><P>朝食あり・夕食あり</P></div>
+                </div>
+                <div class="grid_text1">
+                    <ul>
+                        <li>
+                            <p>大人1名様あたりの料金<span>(消費税込み)</span></p>
+                            <p>(1泊1室<select name="select">
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                            </select>)名様ご利用時 単位：円)</p>
+                        </li>
+                        <li class="grid_button1">
+                            <input type="button" value="後の期間▶">
+                        </li>
+                    </ul>
+                </div>
+                <div class="table_group">
+                    <table class="table1">
+                        <tr class="table_row1">
+                            <th class="table_colum">部屋タイプ</th>
+                            <th>プラン<br>詳細</th>
+                            <th>7/28<br>(木)</th>
+                            <th>7/29<br>(金)</th>
+                            <th class="sat">7/30<br>(土)</th>
+                            <th class="sun">7/31<br>(日)</th>
+                            <th>8/1<br>(月)</th>
+                            <th>8/2<br>(火)</th>
+                            <th>8/3<br>(水)</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">和モダンデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th>-</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                        </tr>
+                    </table>
+                    <div class="table_info">
+                        <p>〇：空室あり　△：残りわずか　×：満室　‐：設定なし</p>
+                        <p class="table_info2"><a href="">※料金は消費税込みです。</a></p>
+                        <p>※上記の表示は、空室検索の紹介時点の状況ですので、予約時にお取りできない場合もございます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page_top">
+                <a href="#">ページ先頭へ</a>
+            </div>
+        </div>
+        <div class="summer_plan">
+            <div class="summer_title">
+                <h6>庄内川鵜飼プラン（予約代行）</h6>
+            </div>
+            <div class="row m-0 summer_group">
+                <div class="col-7 summer_text">
+                    <p>1300年の歴史を誇る庄内川鵜飼うかい。国宝春日井サボテンのライトアップを見ながら幻想的な鵜飼をお楽しみ頂ける
+                        庄内川鵜飼いの予約を代行します。
+                    </p>
+                    <p>チェックインは17：00までにお済ませいただくことが必要です。</p>
+                    <p class="checkin1">鵜飼プランご利用一例</p>
+                    <p>(6月～8月)</p>
+                    <p>15：00チェックイン</p>
+                    <p>17：00お夕食</p>
+                    <p>18：50宿より乗船場所へご案内</p>
+                    <p>19：00乗船</p>
+                    <p>↓(遊覧)</p>
+                    <p>19：45</p>
+                    <p>↓(鵜飼観覧)</p>
+                    <p>20:15</p>
+                    <p class="checkin2">下船（宿に到着）</p>
+                    <p>（9月～10月15日）</p>
+                    <p>15：00チェックイン</p>
+                    <p>17：00お夕食</p>
+                    <p>18：20宿より乗船場所～ご案内</p>
+                    <p>18：30乗船</p>
+                    <p>↓（遊覧）</p>
+                    <p>19：15</p>
+                    <p>↓（鵜飼観覧）</p>
+                    <p>19：45</p>
+                    <p class="checkin3">下船（宿に到着）</p>
+                    <p>※悪天候や川の増水、新型コロナウイルスの影響によって鵜飼が中止になる場合がございます。</p>
+                    <p>その際は「猪鹿蝶の味覚プラン」にご変更となりますのでご了承ください。</p>
+                    <p>※鵜飼船の予約状況によって船の席が取れない場合がございます。</p>
+                    <p>その際はご連絡をさせていただきます。</p>
+                    <p class="checkin4">※貸切船をご希望の場合は60,000円で承れますが、ご希望日の予約状況によってお受けできない場合がございます。</p>
+                    <p>鵜飼の手配は別途以下の料金を宿にて頂戴します。</p>
+                    <p class="checkin2">3,000円（大人お1人様消費税込）</p>
+                    <p class="checkin4">※お客様のご都合で鵜飼をキャンセルする場合、当日キャンセルは100％、前日キャンセルは50％を頂戴します。</p>
+                    <p>西に庄内川の対岸、雄大な濃尾平野の彼方に奥美濃の山並みが一望できる和の伝統と近代感覚のデザインを調和させた明るく清潔なお部屋にて
+                        旅の情緒を感じていただける1泊2食付プランです。
+                    </p>
+                    <p></p>
+                    <p class="summer_text2">【春日井温泉　白帝の湯】</p>
+                    <p>全室半露天風呂に流れる春日井温泉は「白帝の湯」と呼ばれ、弱アルカリ性単純温泉、
+                        疲労回復、健康促進などさまざまな効能とヌルっとした泉質は肌がすべすべになると評判の
+                        美人の湯、日頃の疲れを癒してください。
+                        <br>※国宝春日井サボテンを臨む貸切風呂もございます。
+                    </p>
+                    <p class="summer_text3">【お食事】</p>
+                    <p>お食事はゆっくりと個室ダイニング【色葉繧繝】でお楽しみいただけます。お料理は、
+                        広大な自然環境から得られる四季夫々の旬の素材を中心に質と量のバランスに配慮して
+                        念入りに調理された新しい感覚の会席料理。ワインと合わせても堪能していただけます。
+                    </p>
+                    <p class="summer_text4">【チェックイン】</p>
+                    <p>15：00</p>
+                    <p>【チェックアウト】</p>
+                    <p>11：00</p>
+                    <div class="summer_text5"></div>
+                    <p>※貸切風呂のご予約は、ご到着後となります。</p>
+                    <p>※お部屋の冷蔵庫のお飲み物は無料です。</p>
+                    <p>※小学生以下（乳幼児含む）のお子様はお泊りいただけません。予めご了承ください。</p>
+                    <div class="summer_text6"></div>
+                </div>
+                <div class="col-5">
+                    <div class="center">
+                        <ul>
+                            <li><a href="#pib-01" data-bs-toggle="modal"><img class="img-fluid thumb8" src="../images/food/wasyoku16.jpg" data-image="../images/food/wasyoku16.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pib-01" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku16.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-02" data-bs-toggle="modal"><img class="img-fluid thumb8" src="../images/venice-436932_1920.jpg" data-image="../images/venice-436932_1920.jpg" style="object-fit: cover"></a></li>
+                            <div class="modal fade" id="pic-02" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/venice-436932_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-03" data-bs-toggle="modal"><img class="img-fluid thumb8" src="../images/food/wasyoku2.jpg" data-image="../images/food/wasyoku2.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-03" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/food/wasyoku2.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-04" data-bs-toggle="modal"><img class="img-fluid thumb8" src="../images/fireworks-167999_1920.jpg" data-image="../images/fireworks-167999_1920.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-04" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/fireworks-167999_1920.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-05" data-bs-toggle="modal"><img class="img-fluid thumb8" src="../images/hotel1.jpg" data-image="../images/hotel1.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-05" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel1.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-06" data-bs-toggle="modal"><img class="img-fluid thumb8" src="../images/hotel13.jpg" data-image="../images/hotel13.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-06" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel13.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="#pic-07" data-bs-toggle="modal"><img class="img-fluid thumb8" src="../images/hotel9.jpg" data-image="../images/hotel9.jpg" style="object-fit: cover;"></a></li>
+                            <div class="modal fade" id="pic-07" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <img src="../images/hotel9.jpg" class="img-fluid" style="object-fit: cover;width:100%;height:100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                        <div>
+                            <img src="../images/food/wasyoku16.jpg" id="bigimg8">
+                        </div>
+                    </div>
+                </div>
+                <div class="row grid_row">
+                    <div class="col-2 grid_title1"><p>お食事</p></div>
+                    <div class="col-5 grid_title2"><P>朝食あり・夕食あり</P></div>
+                </div>
+                <div class="grid_text1">
+                    <ul>
+                        <li>
+                            <p>大人1名様あたりの料金<span>(消費税込み)</span></p>
+                            <p>(1泊1室<select name="select">
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                            </select>)名様ご利用時 単位：円)</p>
+                        </li>
+                        <li class="grid_button1">
+                            <input type="button" value="後の期間▶">
+                        </li>
+                    </ul>
+                </div>
+                <div class="table_group">
+                    <table class="table1">
+                        <tr class="table_row1">
+                            <th class="table_colum">部屋タイプ</th>
+                            <th>プラン<br>詳細</th>
+                            <th class="sun">7/31<br>(日)</th>
+                            <th>8/1<br>(水)</th>
+                            <th>8/2<br>(木)</th>
+                            <th>8/3<br>(金)</th>
+                            <th>8/4<br>(月)</th>
+                            <th>8/5<br>(火)</th>
+                            <th class="sat">8/6<br>(土)</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">キャッスル、ラグジュアリースイート【ストーンカウチ付にリニューアル】国宝春日井サボテンに最も近い特別室</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">和モダンデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">kasugaiデラックススイート　2階庄内川展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">SHOWNAIプレミアムスイート　2階春日井サボテン展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                        </tr><tr class="table_row2">
+                            <th class="table_colum"><a href="">SHOWNAIエグゼクティブスイート　2階春日井サボテン展望テラス付</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                        </tr>
+                        <tr class="table_row2">
+                            <th class="table_colum"><a href="">リバーラグジュアリースイート春日井サボテンと庄内川の清流を臨む特別室</a></th>
+                            <th><button class="table_button">カレンダー<br>表示</button></th>
+                            <th class="sun">×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th>×</th>
+                            <th class="sat">×</th>
+                        </tr>
+                    </table>
+                    <div class="table_info">
+                        <p>〇：空室あり　△：残りわずか　×：満室　‐：設定なし</p>
+                        <p class="table_info2"><a href="">※料金は消費税込みです。</a></p>
+                        <p>※上記の表示は、空室検索の紹介時点の状況ですので、予約時にお取りできない場合もございます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page_top2">
+                <button class="btn page_no"><a href="#">おすすめ順</a></button>
+                <button class="btn"><a href="">料金が安い順</a></button>
+                <button class="btn"><a href="">料金が高い順</a></button>
+            </div>
+            <div class="page_top3">
+                <button class="btn"><a href="">HOMEに戻る</a></button>
+                <button class="btn"><a href="">このページのTOPへ</a></button>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div id="manor_card" class="container-fluid p-0">
+        <div class="card">
+            <img id="manor" class="img-fluid" src="../images/manor-house-2359884.jpg" style="object-fit: cover;">
+            <div id="manor-text" class="card-img-overlay text-white mt-2">
+                <p class="ps-4">大正五年創業の<br>老舗宿が新たに甦る。<br>山上の春日井サボテンを背に西を見れば壮麗な<br>
+                    木曽川の景色が広がる。<br>嵓屋 猪鹿蝶はおもてなしという<br>
+                    灯火をご用意しております。<br>大切な方との忘れられない新しい春日井の旅を。</p>
+            </div>
+        </div>
+    </div>
+    <div id="planbox" class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 p-0"><h6 class="border border-1 m-3 mb-0 p-4 bg-dark text-white">空室検索<span>→</span></h6></div>
+            <div class="col-12 col-md-4 p-0"><h6 id="plan" class="border border-1 m-3 mb-0 p-4">ご宿泊プラン<span>→</span></h6></div>
+            <div class="col-12 col-md-4 p-0"><h6 class="border border-1 m-3 p-4">空室カレンダー<span>→</span></h6></div>
+        </div>
+    </div>
+    <div id="tel1" class="container-fluid">
+        <h3 class="p-1">TEL.<span id="telep">0568-00-0000</span></h3>
+        <p>
+            夕食時は、お電話がつながりにくい場合がございます。比較的つながりやすい時間帯(11:00～17:00頃)におかけ直しください。
+        </p>
+        <li><a href="#">ご予約状況の確認<span>→</span></a></li>
+        <li><a href="#">ご予約内容の変更<span>→</span></a></li>
+        <li><a href="#">ご予約キャンセル<span>→</span></a></li>
+    </div>
+    <div id="planbox-2" class="container">
+        <div class="d-flex flex-wrap align-items-center">
+            <div>空室検索</div>
+            <div class="dropdown">
+                <button id="weekday" class="btn dropdown-toggle" data-bs-toggle="dropdown"><span id="check">チェックイン日</span><br>
+                    <span id="time"></span><span class="day">年</span><span id="time2"></span><span class="day">月</span><span id="time3"></span><span class="day day2">日</span></button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item text-center"><span id="date2"></span><span>年</span><span id="date3"></span><span>月</span></li>
+                    <li class="dropdown-item">
+                        <div style="width:650px;">
+                            <button id="prev" type="button">前の月</button>
+                            <button id="next" type="button">次の月</button>
+                            <div id="calendar"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="days" id="dayafter">日付未定</label><br>
+                <input class="form-check-input" type="checkbox" id="days">
+            </div>
+            <div class="dropdown">
+                <button id="Stop" class="btn dropdown-toggle" data-bs-toggle="dropdown"><span id="stop">泊数</span><br>
+                <span id="stop1">1</span>泊</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">1</li>
+                    <li class="dropdown-item">2</li>
+                    <li class="dropdown-item">3</li>
+                    <li class="dropdown-item">4</li>
+                    <li class="dropdown-item">5</li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button id="Num" class="btn dropdown-toggle" data-bs-toggle="dropdown"><span id="num1">人数(1部屋あたり)</span><br>
+                <span id="num2">2</span>名様</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">1</li>
+                    <li class="dropdown-item">2</li>
+                    <li class="dropdown-item">3</li>
+                    <li class="dropdown-item">4</li>
+                    <li class="dropdown-item">5</li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button id="Num" class="btn dropdown-toggle" data-bs-toggle="dropdown"><span id="num1">部屋数</span><br>
+                <span id="num2">1</span>泊</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">1</li>
+                    <li class="dropdown-item">2</li>
+                    <li class="dropdown-item">3</li>
+                    <li class="dropdown-item">4</li>
+                    <li class="dropdown-item">5</li>
+                </ul>
+            </div>
+            <div id="access" class="align-self-center p-4">
+                <a href="#">この条件で検索</a>
+            </div>
+            <div id="plan2" class="align-self-center p-4">
+                <a href="#">ご宿泊プラン<span>→</span></a> 
+            </div>
+            <div id="calendar2" class="align-self-center p-4">
+                <a href="#">空室カレンダー<span>→</span></a>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap align-items-center mt-5">
+            <div id="tel2">
+                <h5>TEL.<span>0568-61-2204</span></h5>
+            </div>
+            <div id="info">
+                夕食時は、お電話がつながりにくい場合がございます。<br>
+                比較的つながりやすい時間帯(11:00～17:00頃)に<br>
+                おかけ直しください。
+            </div>
+            <div class="ms-auto">
+                <div id="info2" class="d-flex align-items-center">
+                    <div>
+                        ご利用状況の確認<span class="arrow2">→</span>
+                    </div>
+                    <div>
+                        ご予約内容の変更<span class="arrow2">→</span>
+                    </div>
+                    <div>
+                        ご予約キャンセル<span class="arrow2">→</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="container-fluid pt-5 mt-3">
+        <div class="row">
+            <div id="wedding-md" class="col-md-5">
+                <div class="row">
+                    <div id="wedding" class="col-5 pe-0">
+                        <img class="fluid" src="../images/wedding-dresses-1486005_1920.jpg" style="object-fit: cover;">
+                    </div>
+                    <div id="wedding-banner" class="col-7 p-0 text-center bg-white">
+                        <p id="mariel" class="mt-2"><span>マリエールガーデンバーベナ×猪鹿蝶</span></p>
+                        <p id="wedding-text">wedding</p>
+                        <h4>家族の<span id="redramp">灯</span>り</h4>
+                        <p id="mariel2">家族の歴史を紡ぐ旅</p>
+                        <p id="mariel3">高級旅館でおもてなしウェディング</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row mt-3">
+                    <div id="cake" class="col-6 pe-0">
+                        <img class="fluid" src="../images/cake-1971552_1920.jpg" style="object-fit: cover;">
+                    </div>
+                    <div id="rogo5" class="col-6 text-center">
+                        <p id="rogo5-text">嵓屋<span>明治二八年創業</span></p>
+                        <h6>猪鹿蝶</h6>
+                        <p id="online">オンラインショップ</p>
+                        <img id="spiral3" src="../images/spiral-2790215_640.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div id="staff" class="row text-center bg-white mt-4 m-1 p-3">
+                    <div>スタッフ募集</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer-info1" class="row">
+            <div id="rogo6" class="col-md-2 text-center">
+                <div id="rogo6-h">
+                    <p id="rogo6-text">嵓屋<span>明治二八年創業</span></p>
+                    <h6>猪鹿蝶</h6>
+                </div>
+                <p id="online2">KURAYA<br>INOSHIKACHO</p>
+                <img id="spiral4" src="../images/spiral-2790215_640.png" alt="">
+            </div>
+            <div class="col-md-10 p-0 pt-3">
+                <div class="row m-0 p-0">
+                    <nav id="nav4" class="nav">
+                        <a href="#" class="nav-link nav3 p-1 pt-3 me-4">ホーム</a>
+                        <a href="#" class="nav-link nav3 p-1 pt-3 me-4">コンセプト</a>
+                        <a href="#" class="nav-link nav3 p-1 pt-3 me-4">お部屋</a>
+                        <a href="#" class="nav-link nav3 p-1 pt-3 me-4">お料理</a>
+                        <a href="#" class="nav-link nav3 p-1 pt-3 me-4">温泉</a>
+                        <a href="#" class="nav-link nav3 p-1 pt-3 me-4">館内案内</a>
+                        <a href="#" class="nav-link nav3 p-1 pt-3 me-4">過ごし方</a>
+                    </nav>
+                </div>
+                <div id="botton5" class="row p-0 m-0">
+                    <a href="#" class="col-3 p-3 mt-4 text-center botton3">ご宿泊プラン</a>
+                    <a href="#" class="col-3 p-3 mt-4 text-center botton4">空室検索</a>
+                </div>
+                <div class="row p-0 m-0">
+                    <div id="footer-info" class="mt-3 p-0">
+                        <a href="#">アクセス</a>
+                        <a href="#">春日井散策</a>
+                        <a href="#">嵓屋だより</a>
+                        <a href="#">お知らせ</a>
+                        <a href="#">よくあるご質問</a>
+                        <a href="#">プライバシーポリシー</a>
+                        <a href="#">お問い合わせ</a>
+                        <a href="#">お得意様専用ページ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="flex2">
+            <div id="follow" class="">
+                <p class="ptext">嵓屋 猪鹿蝶（くらや いのしかちょう）</p>
+                <p class="ptext">〒486-0000 愛知県春日井市松河戸町777</p>
+                <p class="ptext" id="tel5">TEL.<span>0568-00-0000</span></p>
+                <p id="allright">© INOSHIKACHO All Rights Reserved.</p>
+            </div>
+            <div id="icon4">
+                <p class="text-center ms-5">FOLLOW US</p>
+                <ul>
+                    <li id="facebook3">
+                        <img src="../images/facebook-2935402_640.png" alt="">
+                    </li>
+                    <li id="insta2">
+                        <img src="../images/icon-1562139_651.png" alt="">
+                    </li>
+                    <li id="wifi3">
+                        <img src="../images/wifi-2_640.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/my.js"></script>
+    <script src="../JS/center.js"></script>
+</body>
+</html>

@@ -1,0 +1,571 @@
+@charset "UTF-8";
+
+/* --------------- heroimage ----------- */
+
+#gest_mt img {
+    height: 200px;
+}
+#gest {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+#gest h5 {
+    writing-mode: vertical-lr;
+    letter-spacing: 1px;
+}
+#gest2 {
+    background-color: rgb(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 10px;
+}
+#gest2 p {
+    font-size: 10px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+#gest3 {
+    text-align: center;
+    padding: 10px 0;
+}
+#gest3 p {
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding-top: 20px;
+}
+
+@media screen and (min-width:769px) {
+    #gest_mt img {
+        height: 500px;
+    }
+    #gest2 {
+        margin-top: 6rem;
+        padding: 30px 0;
+    }
+    #gest2 h5 {
+        font-size: 30px;
+    }
+    #gest2 p {
+        padding-top: 10px;
+    }
+    #gest3 {
+        padding: 40px 0 20px 0;
+    }
+    #gest3 p {
+        font-size: 32px
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #get_mt img {
+        height: 500px;
+    }
+    #gest2 {
+        margin-top: 7rem;
+    }
+}
+@media screen and (min-width:1400px) {
+    #gest_mt {
+        margin-top: 90px;
+    }
+    #gest_mt img {
+        height: 500px;
+    }
+    #gest2 {
+        margin-top: 5rem;
+    }
+    #gest2 h5 {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+}
+
+/* -------------- carousel -------------- */
+
+#carousel_group {
+    background-color: rgb(252, 245, 235);
+    padding: 30px 0;
+}
+#carousel_group h6 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    padding-top: 20px;
+}
+#indicator {
+    margin-top: 20px;
+}
+#carousel img {
+    height: 300px;
+    object-fit: cover;
+}
+#ca_info {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    padding-bottom: 30px;
+
+}
+#ca_info p {
+    text-align: left;
+    margin: 0;
+    font-size: 12px;
+    line-height: 24px;
+}
+#hotspa {
+    background-color: rgb(246, 241, 248);
+}
+#hotspa_group {
+    padding-bottom: 20px;
+}
+#hotspa_group p {
+    font-size: 12px;
+    text-align: left;
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+#hotspa_info {
+    padding: 10px 10px;
+    background-color: rgb(246, 241, 248);
+}
+#hotspa_info1 {
+    padding-right: 0;
+}
+#hotspa_info2 {
+    padding-left: 0;
+}
+#hotspa_info img {
+    height: 130px;
+    width: 100%;
+}
+#hotspa_info3 {
+    font-size: 12px;
+    padding: 10px 10px;
+    padding-bottom: 0;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-align: left;
+}
+
+
+@media screen and (min-width:769px) {
+    #carousel_group h6 {
+        font-size: 24px;
+        line-height: 50px;
+    }
+    #indicator {
+        margin-top: 30px;
+    }
+    #carousel img {
+        height: 400px;
+    }
+    #ca_info {
+        margin: 0;
+        padding-top: 30px;
+        padding-bottom: 80px;
+    }
+    #ca_info p {
+        text-align: center;
+        line-height: 40px;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    #hotspa {
+        padding-top: 50px;
+    }
+    #hotspa img {
+        width: 100%;
+        height: 300px;
+    }
+    #hotspa_group {
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 50px;
+    }
+    #hotspa_main {
+        font-size: 14px;
+    }
+    #hotspa_group p {
+        margin: 0;
+        letter-spacing: 3px;
+        line-height: 35px;
+    }
+    #hotspa_info {
+        padding-bottom: 50px;
+    }
+    #hotspa_info img {
+        height: 400px;
+    }
+    #hotspa_info3 {
+        font-size: 16px;
+        letter-spacing: 3px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    #ca_info {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 100px 0 100px 0;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #carousel img {
+        height: 800px;
+        padding: 0 150px;
+    }
+    #hotspa {
+        padding-top: 100px;
+    }
+    #hotspa_image img {
+        height: 550px;
+    }
+    #hotspa_group {
+        padding-top: 5%;
+        padding-left: 50px;
+    }
+    #hotspa_group p {
+        font-size: 16px;
+    }
+    #hotspa_info {
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    #hotspa_info1 img {
+        position: absolute;
+        width: 400px;
+        height: 600px;
+        left: 0;
+        top: -200px;
+    }
+    #hotspa_info2 img {
+        height: 350px;
+        padding-left: 30px;
+    }
+    #hotspa_info3 p {
+        padding: 50px;
+        font-size: 16px;
+        letter-spacing: 5px;
+        line-height: 30px;
+    }
+}
+@media screen and (min-width:1400px) {
+    #hotspa_info1 img {
+        width: 420px;
+    }
+}
+
+/* -------------- subenia ------------ */
+
+#subenia {
+    margin: 0;
+    padding-top: 50px;
+}
+#subenia2 {
+    padding: 0 10px;
+    padding-bottom: 30px;
+}
+#subenia img {
+    height: 200px;
+    width: 100%;
+}
+#subenia2 h6 {
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 2px
+}
+#subenia2 p {
+    font-size: 12px;
+    margin: 0;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+#hotspring {
+    padding-top: 10px;
+    margin: 0;
+}
+#hotspring img {
+    height: 200px;
+    width: 100%;
+}
+#hotspring h6 {
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+#hotspring p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+#hotspring_button {
+    border: 1px solid rgb(189, 185, 185);
+    padding: 20px 5px;
+    margin-bottom: 40px;
+    background-color: white;
+    width: 100%;
+}
+#hotspring_button a {
+    text-decoration: none;
+    color: black;
+}
+#hotspring_button span {
+    padding-left: 50%;
+}
+#villa h6 {
+    padding: 30px 0 10px 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+#villa p {
+    font-size: 12px;
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+#hotspring_button2 {
+    margin: 20px 0;
+    border: 1px solid rgb(189, 185, 185);
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+}
+#hotspring_button2 a {
+    text-decoration: none;
+    color: black;
+}
+#hotspring_button2 span {
+    padding-left: 65%;
+}
+
+@media screen and (min-width:769px) {
+    #subenia {
+        padding-top: 100px;
+    }
+    #subenia img {
+        min-height: 450px;
+
+    }
+    #subenia2 {
+        padding-bottom: 80px;
+    }
+    #subenia2 h6 {
+        font-size: 24px;
+        padding: 30px 0 20px 0;
+    }
+    #subenia2 p {
+        font-size: 14px;
+        letter-spacing: 3px;
+        line-height: 26px;
+    }
+    #hotspring img {
+        height: 450px;
+    }
+    #hotspring h6 {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    #hotspring p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    #hotspring_button {
+        width: 40%;
+        margin: 20px 30%;
+    }
+    #villa {
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+    #villa h6 {
+        font-size: 24px;
+    }
+    #villa p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    #villa button {
+        width: 40%;
+        margin: 0 30%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #subenia {
+        width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    #subenia2 {
+        padding: 0 50px;
+    }
+    #subenia2 h6 {
+        padding: 50px 0 30px 0;
+        text-align: left;
+    }
+    #hotspring {
+        padding: 100px 50px 50px 50px;
+    }
+    #hotspring {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    #hotspring h6 {
+        padding: 50px 0 30px 0;
+        text-align: left;
+    }
+    #hotspring p {
+        padding-left: 0;
+        padding-right: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    #hotspring button {
+        width: 60%;
+        margin: 30px 0;
+    }
+    #villa {
+        padding: 50px 0 50px 0;
+    }
+    #villa h6 {
+        padding: 100px 0 30px 0;
+        text-align: left;
+    }
+    #villa button {
+        width: 60%;
+        margin: 0;
+        margin-top: 30px;
+    }
+}
+
+/* ------------- food_24 ------------ */
+
+#food_hotel_group img {
+    height: 100%;
+    width: 100%;
+}
+#food_24 {
+    padding: 0;
+    padding-left: 10px;
+}
+#hotel9 {
+    padding: 0;
+    padding-right: 10px;
+}
+#hotel9_text p {
+    padding-top: 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+#table_info {
+    padding: 10px;
+    margin: 0;
+    padding-bottom: 50px;
+}
+#table_info h6 {
+    text-align: center;
+    padding-top: 10px;
+}
+#table_info .info_color {
+    background-color: rgb(243, 237, 237);
+    margin-bottom: 2px;
+    padding: 10px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+#table_info .info_white {
+    font-size: 12px;
+    padding: 10px 10px;
+}
+
+@media screen and (min-width:769px) {
+    #food_hotel_group {
+        padding: 0 30px;
+        padding-top: 50px;
+    }
+    #food_hotel_group img {
+        height: 35vh;
+    }
+    #hotel9_text p {
+        text-align: center;
+        font-size: 16px;
+        padding: 0 18%;
+        padding-top: 30px;
+        line-height: 30px;
+        padding-bottom: 30px;
+    }
+    #table_info {
+        padding: 20px;
+        padding-bottom: 200px;
+    }
+    #table_info h6 {
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+    #table_info .info_color {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 14px;
+    }
+    #table_info .info_white {
+        font-size: 14px;
+        padding: 20px 30px;
+        border-top: 1px solid rgb(217, 212, 212);
+    }
+    #table_info .credit {
+        padding-top: 25px;
+    }
+    #table_info .credit_text {
+        padding-top: 25px;
+    }
+    #table_info .last {
+        border-bottom: 1px solid rgb(216, 211, 211);
+    }
+}
+
+@media screen and (min-width:1000px) {
+    #food_hotel_group {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #food_hotel_group img {
+        height: 30vh;
+    }
+    #food_24 {
+        padding-left: 0;
+    }
+    #hotel9 {
+        padding-right: 0;
+    }
+    #hotel9_text p {
+        padding: 50px 15px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #food_hotel_group img {
+        height: 45vh;
+    }
+    #table_info {
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+
+}
+
+@media screen and (min-width:1400px) {
+    #hotel9_text p {
+        padding: 100px 70px 50px 70px;
+    }
+}

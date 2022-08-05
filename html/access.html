@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アクセス</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/my.css">
+    <link rel="stylesheet" href="../CSS/access.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+    <div id="page_top">
+        <a href="#"></a>
+    </div>
+    <div id="sticky1" class="fixed-top sticky1">
+        <ul class="p-0 m-0">
+            <li id="spi"><a href="../html/home.html"><img id="spiral" src="../images/spiral-2790215_640.png" alt=""></a></li>
+            <li class="li-border"><a href="../html/consept.html">コンセプト</a></li>
+            <li class="li-border"><a href="../html/house.html">お部屋</a></li>
+            <li class="li-border"><a href="../html/corse.html">お料理</a></li>
+            <li class="li-border"><a href="../html/hotspring.html">温泉</a></li>
+            <li class="li-border"><a href="../html/infomation.html">館内案内</a></li>
+            <li class="li-border"><a href="../html/manial.html">過ごし方</a></li>
+            <li class="li-border"><a href="../html/kasugai.html">春日井散策</a></li>
+            <li class="p-4" id="plan"><a href="../html/plan.html">ご宿泊プラン</a></li>
+            <li class="p-4 m-0" id="sarch">
+                <a class="text-white p-3" href="#eventsearch" data-bs-toggle="offcanvas">空室検索</a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="eventsearch" style="width: 100vw;background-color: rgba(37, 26, 26, 0.9);color:white">
+                    <div id="offheader" class="offcanvas-header">
+                        <h5 class="offcanvas-title">空室検索<br><span>SEARCH</span></h5>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div id="search_group" class="list-group list-group-flush">
+                            <ul>
+                                <li>チェックイン<br><input type="date" id="date" name="今日の日付" value="2022-07-30"></li>
+                                <li id="check_block">日付未定<br><input id="checkbox" type="checkbox"></li>
+                                <li id="check_block2">泊数<br><select name="select" id="dropdown2">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select><span>泊</span></li>
+                                <li>
+                                    人数（1部屋あたり）<br><select name="select" id="dropdown3">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select><span>名様</span>
+                                </li>
+                                <li>
+                                    部屋数<br><select name="select" id="dropdown4">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select><span>部屋</span>
+                                </li>
+                                <Li class="button">
+                                    <h5>検索</h5>
+                                </Li>
+                            </ul>
+                        </div>
+                        <div class="button2">
+                            <a id="button2_text" href="">ご宿泊プラン<span>→</span></a>  
+                            <a id="button2_text" href="">空室カレンダー<span>→</span></a>  
+                        </div>
+                        <div class="tel_search">
+                            <p>お電話のご予約<span class="maintel">TEL.</span><space>0568-00-0000</space></p>
+                            <p class="maintel_text">夕食時は、お電話がつながりにくい場合がございます。</p>
+                            <p class="maintel_text">比較的つながりやすい時間帯(11：00~17：00頃)におかけ直しください。</p>
+                            <div id="tel_search2">
+                                <a href="">ご予約状況の確認<span>→</span></a>
+                                <a href="">ご予約内容の変更<span>→</span></a>
+                                <a href="">ご予約キャンセル<span>→</span></a>
+                            </div>
+                            <div id="button_close">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="background-color: white;"></button>
+                                <P>閉じる</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="../html/kuraya.html">嵓屋だより</a></li>
+            <li><a href="../html/access.html">アクセス</a></li>
+            <li id="phone"><a href="#"></a><img id="tel" src="../images/143038.jpg" alt="">0568-00-0000</li>
+            <li><a href=""></a></li>
+            <button class="navbar-toggler ps-2 pe-1" data-bs-toggle="offcanvas" data-bs-target="#main_nav2">
+                <span id="icon2" class="navbar-dark navbar-toggler-icon"></span><br><span class="text-dark" style="font-size: 10px;">メニュー</span>
+            </button>
+            <div class="offcanvas offcanvas-start bg-dark" id="main_nav2" style="width: 100vw;">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body bg-light">
+                    <a href="#" class="text-dark pe-3">JP</a><a href="#" class="text-dark">EN</a>
+                    <div class="row mt-5">
+                        <div class="col-12 p-3 mb-3 border border-1" style="position: relative;background-color: antiquewhite;"><a class="ms-auto text-dark" href="#" style="text-decoration: none;">ご宿泊プラン</a><span class="ms-auto" style="position: absolute;right:1rem;">→</span></div>
+                        <div class="col-12 p-3 mb-3 border border-1" style="position: relative;">カレンダーから探す<span class="ms-auto" style="position: absolute;right:1rem;">→</span></div>
+                        <div class="col-12 p-3 mb-3 border border-1 text-white" style="position: relative;background-color: black;">空室検索<span style="position: absolute;right:1rem;">→</span></div>
+                    </div>
+                    <div id="hum" class="row" style="font-size: 12px;">
+                        <div class="col-12 mt-3 mb-3"><li><span>ホーム</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>コンセプト</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お部屋</span></span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お料理</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>温泉</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>館内案内</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>過ごし方</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>春日井散策</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>嵓屋だより</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>アクセス</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お知らせ</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>よくあるご質問</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>プライバシーポリシー</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お問い合わせ</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お得意様専用ページ</span></li></div>
+                    </div>
+                    <div id="logo1">
+                        <div id="insta">
+                            <img src="../images/icon-1562139_651.png" alt="">
+                        </div>
+                        <div id="facebook">
+                            <img src="../images/facebook-2935402_640.png">
+                        </div>
+                        <div id="wifi">
+                            <img src="../images/wifi-2_640.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <nav id="navbar1" class="navbar navbar-expand-xl navbar-dark bg-white p-0 fixed-top">
+        <div class="container-fluid p-0">
+                <a class="navbar-brand text-dark p-0 pb-3" href="#" id="nav">
+                    <img id="spiral2" src="../images/spiral-2790215_640.png" alt="">
+                    <p id="nav-rogo1" class="p-1 m-1">嵓屋 <span>明治二八年創業</span><br>
+                    <span id="name">猪鹿蝶</span></p>
+                </a>
+                <span class="text-center ps-2 pe-2 ms-auto" style="font-size: 10px;border-left: 1px solid rgb(205, 202, 202);">
+                    <img src="../images/143038.jpg" style="width: 30px;"><br><span>TEL</span>
+                </span>
+                <span class="text-center ps-2 pe-2" style="font-size: 10px;border-left: 1px solid rgb(205, 202, 202);"><img src="../images/127914.jpg" style="width: 30px;"><br>ご予約</span>
+            <button class="navbar-toggler ps-2 pe-1" style="border-left: 1px solid rgb(205, 202, 202);" data-bs-toggle="offcanvas" data-bs-target="#main_nav">
+                <span class="navbar-toggler-icon bg-dark"></span><br><span class="text-dark" style="font-size: 10px;">メニュー</span>
+            </button>
+            <div class="offcanvas offcanvas-start" id="main_nav" style="width: 100vw;">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body bg-light">
+                    <a href="#" class="text-dark pe-3">JP</a><a href="#" class="text-dark">EN</a>
+                    <div class="row mt-5">
+                        <div class="col-12 p-3 mb-3 border border-1" style="position: relative;background-color: antiquewhite;"><a class="ms-auto text-dark" href="#" style="text-decoration: none;">ご宿泊プラン</a><span class="ms-auto" style="position: absolute;right:1rem;">→</span></div>
+                        <div class="col-12 p-3 mb-3 border border-1" style="position: relative;">カレンダーから探す<span class="ms-auto" style="position: absolute;right:1rem;">→</span></div>
+                        <div class="col-12 p-3 mb-3 border border-1 text-white" style="position: relative;background-color: black;">空室検索<span style="position: absolute;right:1rem;">→</span></div>
+                    </div>
+                    <div id="hum" class="row" style="font-size: 12px;">
+                        <div class="col-12 mt-3 mb-3"><li><span>ホーム</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>コンセプト</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お部屋</span></span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お料理</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>温泉</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>館内案内</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>過ごし方</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>春日井散策</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>嵓屋だより</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>アクセス</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お知らせ</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>よくあるご質問</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>プライバシーポリシー</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お問い合わせ</span></li></div>
+                        <div class="col-6 col-sm-4 mt-3"><li><span>お得意様専用ページ</span></li></div>
+                    </div>
+                    <div id="logo1">
+                        <div id="insta">
+                            <img src="../images/icon-1562139_651.png" alt="">
+                        </div>
+                        <div id="facebook">
+                            <img src="../images/facebook-2935402_640.png">
+                        </div>
+                        <div id="wifi">
+                            <img src="../images/wifi-2_640.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid p-0" style="background-color:rgb(252, 245, 235);">
+        <div id="gest_mt" class="card" style="width:100%;">
+            <img class="img-fluid" src="../images/kufstein-1726648_1920.jpg" style="object-fit: cover;">
+            <div id="gest" class="card-img-overlay text-white">
+                <div id="gest2" class="access_main">
+                    <h5 class="card-text m-4 mt-3 mb-2">アクセス</h5>
+                    <p>ACCESS</p>
+                </div>
+            </div>
+            <div id="gest3" class="card-text" style="background-color:rgb(252, 245, 235);">
+                <P>国宝春日井サボテンの麓<br>庄内川沿いに佇む老舗宿</P>
+            </div>
+        </div>
+        <div class="iframe">
+            <iframe class="img-fluid map1" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13035.673667264764!2d136.96395693041106!3d35.23340086170868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1659349117736!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map_text1">
+            <p>名古屋から電車で約40分</p>
+            <p>歴史を紡ぐ春日井で皆様のお越しを</p>
+            <p>心よりお待ちしております</p>
+        </div>
+        <div class="row m-0 train">
+            <div class="col-lg-4 order-lg-2 iframe2">
+                <iframe class="img-fluid" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d104328.85458110282!2d136.87636003837804!3d35.19957598555382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x600376e794d78b89%3A0x81f7204bf8261663!2z5ZCN5Y-k5bGL6aeF44CB5oSb55-l55yM5ZCN5Y-k5bGL5biC5Lit5p2R5Yy65ZCN6aeF77yR5LiB55uu77yR4oiS77yU!3m2!1d35.170915!2d136.8815369!4m5!1s0x60036e700a5ea719%3A0x2d5d13a560c567c2!2z5pil5pel5LqV5biC56uL56We6aCY5bCP5a2m5qCh44CB44CSNDg2LTA4MjEg5oSb55-l55yM5pil5pel5LqV5biC56We6aCY55S677yR5LiB55uu77yR4oiS77yY!3m2!1d35.2469621!2d137.00959229999998!5e0!3m2!1sja!2sjp!4v1659373692914!5m2!1sja!2sjp" style="border:0;object-fit: cover;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-8 order-lg-1 train_text">
+                <div class="absolute">
+                    <div class="map_text_lg">
+                        <p>名古屋から電車で約40分</p>
+                        <p>歴史を紡ぐ春日井で皆様のお越しを</p>
+                        <p>心よりお待ちしております</p>
+                    </div>
+                    <p>愛知県と岐阜県を隔てる庄内川沿いに佇む、「嵓屋 猪鹿蝶」。</p>
+                    <p>猪鹿蝶がある春日井へは、名古屋駅から電車で約40分でアクセスできます。</p>
+                    <p>また、隣県からのアクセスもしやすく、春日井駅から無料タクシーもご用意しておりますので、
+                        お気軽にお越しくださいませ。
+                    </p>
+                    <table>
+                        <tr>
+                            <th class="colum1">施設名</th>
+                            <th class="colum2">嵓屋 猪鹿蝶</th>
+                        </tr>
+                        <tr>
+                            <th class="colum1">所在地</th>
+                            <th class="colum2 colum-md-2">〒486-0000<br>愛知県春日井市高蔵寺10‐31</th>
+                            <th class="colum3">〒486-0000 愛知県春日井市高蔵寺10‐31</th>
+                        </tr>
+                        <tr>
+                            <th class="colum1">電話</th>
+                            <th class="colum2">0568-00-0000</th>
+                        </tr>
+                        <tr>
+                            <th class="colum1">FAX</th>
+                            <th class="colum2">0568-00-0000</th>
+                        </tr>
+                        <tr>
+                            <th class="colum1">マップ<br>コード</th>
+                            <th class="colum2">70 187 116*05</th>
+                        </tr>
+                    </table>
+                    <div class="button">
+                        <a href="">グーグルマップを見る<span>→</span></a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div  class="container-fluid taxi">
+        <div class="taxi_xxl">
+            <div class="row m-0 taxi_group_lg">
+                <div class="col-lg-8 taxi_lg1 p-0">
+                    <div class="row m-0 taxi_bg">
+                        <div class="col-md-6 col-lg-5 col-xl-4 taxi_text1">
+                            <h4>名鉄春日井駅より</h4>
+                        </div>
+                        <div class="col-md-6 col-lg-7 col-xl-8 taxi_text2">
+                            <h4>無料タクシーのご案内</h4>
+                        </div>
+                        <p>春日井駅にて名鉄タクシーまたは春日井タクシーにご乗車いただきお越し下さい。</p>
+                        <p>チェックインの際フロントにタクシー代の領収書をお持ちください。料金をお支払いいたします。</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 taxi_lg1 p-0">
+                    <div class="taxi_group">
+                        <div class="row taxi2">
+                            <div class="col-md-6 col-lg-12 tel">
+                                <h6>名鉄タクシーを呼ぶ</h6>
+                                <p>TEL.<span>0568-00-0000</span></p>
+                            </div>
+                            <div class="col-md-6 col-lg-12 tel tel2">
+                                <h6>春日井タクシーを呼ぶ</h6>
+                                <p>TEL.<span>0568-00-0000</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="taxi_group2 m-0">
+                <div class="taxi2_border"></div>
+                <div class="row m-0">
+                    <div class="col-lg-4">
+                        <h6>駐車場のご案内</h6>
+                    </div>
+                    <div class="col-lg-8">
+                        <p>無料駐車場を完備しております。猪鹿蝶前の駐車場にお停めください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid root">
+        <div class="card root_group">
+            <img class="img-fluid root_img1" src="../images/inn-6825153_1920.jpg" style="object-fit: cover;">
+            <div class="card-img-overlay text-white root_over">
+                <div class="root_text1">
+                    <h5>ルートのご案内</h5>
+                    <P>ROUTE INFOMATION</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conteiner-fluid root2">
+        <div class="card-text root_text2">
+            <p>お車でお越しのお客様</p>
+            <span>BY CAR</span>
+            <p class="tap">方向をタップするとルートが表示されます</p>
+        </div>
+        <div class="accordion" id="acd1">
+            <div class="row m-0">
+                <div class="col-md-3 p-0">
+                    <div class="accordion-item acd_border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button acd_btn" data-bs-toggle="collapse" data-bs-target="#d22">
+                                東京方面
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="d22">
+                            <div class="accordion-body acd_group1">
+                                <div>
+                                    <p class="acd_bage1">調布IC</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚘
+                                    </div>
+                                    <p class="acd_text1">中央自動車道 約4時間</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">小牧東IC</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚘</div>
+                                    <p class="acd_text1">尾張パークウェイ経由 約20分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item nobtn">
+                        <h2 class="accordion-header">
+                            <button class="acd_btn_xl">
+                                東京方面
+                            </button>
+                        </h2>
+                        <div>
+                            <div class="accordion-body acd_group1">
+                                <div>
+                                    <p class="acd_bage1">調布IC</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚘
+                                    </div>
+                                    <p class="acd_text1">中央自動車道 約4時間</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">小牧東IC</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚘</div>
+                                    <p class="acd_text1">尾張パークウェイ経由 約20分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-0">
+                    <div class="accordion-item acd_border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button acd_btn2" data-bs-toggle="collapse" data-bs-target="#d23">
+                                飛騨・高山方面
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="d23">
+                            <div class="accordion-body acd_group1">
+                                <div>
+                                    <p class="acd_bage1">飛騨清見IC</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚘
+                                    </div>
+                                    <p class="acd_text1">東海北陸自動車道 約1時間20分</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">関IC</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚘</div>
+                                    <p class="acd_text1">県道367号経由 約25分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item nobtn">
+                        <h2 class="accordion-header">
+                            <button class="acd_btn2_xl">
+                                飛騨・高山方面
+                            </button>
+                        </h2>
+                        <div>
+                            <div class="accordion-body acd_group1">
+                                <div>
+                                    <p class="acd_bage1">飛騨清見IC</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚘
+                                    </div>
+                                    <p class="acd_text1">東海北陸自動車道 約1時間20分</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">関IC</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚘</div>
+                                    <p class="acd_text1">県道367号経由 約25分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-0">
+                    <div class="accordion-item acd_border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button acd_btn3" data-bs-toggle="collapse" data-bs-target="#d26">
+                                名古屋方面
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="d26">
+                            <div class="accordion-body acd_group1">
+                                <div>
+                                    <p class="acd_bage1">名古屋高速入口</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚘
+                                    </div>
+                                    <p class="acd_text1">小牧方面へ</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage1">楠JCT</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚘
+                                    </div>
+                                    <p class="acd_text1">11号小牧線 約10分</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">小牧北出口</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚘</div>
+                                    <p class="acd_text1">国道41号小牧線 約25分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item nobtn">
+                        <h2 class="accordion-header">
+                            <button class="acd_btn3_xl">
+                                名古屋方面
+                            </button>
+                        </h2>
+                        <div>
+                            <div class="accordion-body acd_group1">
+                                <div>
+                                    <p class="acd_bage1">名古屋高速入口</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚘
+                                    </div>
+                                    <p class="acd_text1">小牧方面へ</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage1">楠JCT</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚘
+                                    </div>
+                                    <p class="acd_text1">11号小牧線 約10分</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">小牧北出口</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚘</div>
+                                    <p class="acd_text1">国道41号小牧線 約25分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-0">
+                    <div class="accordion-item acd_border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button acd_btn4" data-bs-toggle="collapse" data-bs-target="#d27">
+                                大阪方面
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="d27">
+                            <div class="accordion-body acd_group1">
+                                <div>
+                                    <p class="acd_bage1">豊中IC</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚘
+                                    </div>
+                                    <p class="acd_text1">名神高速道路 約2時間</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">小牧IC</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚘</div>
+                                    <p class="acd_text1">国道41号線 約25分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item nobtn">
+                        <h2 class="accordion-header">
+                            <button class="acd_btn_xl">
+                                大阪方面
+                            </button>
+                        </h2>
+                        <div>
+                            <div class="accordion-body acd_group1">
+                                <div>
+                                    <p class="acd_bage1">豊中IC</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚘
+                                    </div>
+                                    <p class="acd_text1">名神高速道路 約2時間</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">小牧IC</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚘</div>
+                                    <p class="acd_text1">国道41号線 約25分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conteiner-fluid root2">
+        <div class="card-text root_text2">
+            <p>電車でお越しのお客様</p>
+            <span>BY TRAIN</span>
+            <p class="tap">方向をタップするとルートが表示されます</p>
+        </div>
+        <div class="accordion" id="acd1">
+            <div class="row m-0">
+                <div class="col-md-4 p-0">
+                    <div class="accordion-item acd_border acd_space">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button acd_btn5" data-bs-toggle="collapse" data-bs-target="#d32">
+                                東京駅
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="d32">
+                            <div class="accordion-body acd_group1 train_group">
+                                <div>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚊
+                                    </div>
+                                    <p class="acd_text1">新幹線のぞみ 約1時間45分</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">JR名古屋駅</p>
+                                    <p class="line">|</p>
+                                    <div class="car1 human">🚶</div>
+                                    <p class="acd_text1">乗り換え徒歩 約5分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">名鉄名古屋駅</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚊</div>
+                                    <p class="acd_text1">名鉄犬山線新鵜沼行き 約25分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">名鉄犬山線</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚖</div>
+                                    <p class="acd_text1">無料タクシー 約5分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item nobtn acd_space">
+                        <h2 class="accordion-header">
+                            <button class="acd_btn5_xl">
+                                東京駅
+                            </button>
+                        </h2>
+                        <div>
+                            <div class="accordion-body acd_group1 train_group">
+                                <div>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚊
+                                    </div>
+                                    <p class="acd_text1">新幹線のぞみ 約1時間45分</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">JR名古屋駅</p>
+                                    <p class="line">|</p>
+                                    <div class="car1 human">🚶</div>
+                                    <p class="acd_text1">乗り換え徒歩 約5分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">名鉄名古屋駅</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚊</div>
+                                    <p class="acd_text1">名鉄犬山線新鵜沼行き 約25分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">名鉄犬山線</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚖</div>
+                                    <p class="acd_text1">無料タクシー 約5分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-0">
+                    <div class="accordion-item acd_border acd_space">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button acd_btn6" data-bs-toggle="collapse" data-bs-target="#d33">
+                                新大阪駅
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="d33">
+                            <div class="accordion-body acd_group1 train_group">
+                                <div>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚊
+                                    </div>
+                                    <p class="acd_text1">新幹線のぞみ 約52分</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">JR名古屋駅</p>
+                                    <p class="line">|</p>
+                                    <div class="car1 human">🚶</div>
+                                    <p class="acd_text1">乗り換え徒歩 約5分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">名鉄名古屋駅</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚊</div>
+                                    <p class="acd_text1">名鉄犬山線新鵜沼行き 約25分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">名鉄犬山線</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚖</div>
+                                    <p class="acd_text1">無料タクシー 約5分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item nobtn acd_space">
+                        <h2 class="accordion-header">
+                            <button class="acd_btn6_xl">
+                                新大阪駅
+                            </button>
+                        </h2>
+                        <div>
+                            <div class="accordion-body acd_group1 train_group">
+                                <div>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚊
+                                    </div>
+                                    <p class="acd_text1">新幹線のぞみ 約52分</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">JR名古屋駅</p>
+                                    <p class="line">|</p>
+                                    <div class="car1 human">🚶</div>
+                                    <p class="acd_text1">乗り換え徒歩 約5分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">名鉄名古屋駅</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚊</div>
+                                    <p class="acd_text1">名鉄犬山線新鵜沼行き 約25分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">名鉄犬山線</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚖</div>
+                                    <p class="acd_text1">無料タクシー 約5分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-0">
+                    <div class="accordion-item acd_border acd_space">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button acd_btn9" data-bs-toggle="collapse" data-bs-target="#d34">
+                                各線 名古屋駅
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="d34">
+                            <div class="accordion-body acd_group1 train_group">
+                                <div>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚶
+                                    </div>
+                                    <p class="acd_text1">乗り換え徒歩 約5分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">名鉄名古屋駅</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚊</div>
+                                    <p class="acd_text1">名鉄犬山線新鵜沼行き 約25分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">名鉄春日井駅</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚖</div>
+                                    <p class="acd_text1">無料タクシー 約5分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item nobtn acd_space">
+                        <h2 class="accordion-header">
+                            <button class=" acd_btn7_xl">
+                                各線 名古屋駅
+                            </button>
+                        </h2>
+                        <div>
+                            <div class="accordion-body acd_group1 train_group">
+                                <div>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚶
+                                    </div>
+                                    <p class="acd_text1">乗り換え徒歩 約5分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">名鉄名古屋駅</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚊</div>
+                                    <p class="acd_text1">名鉄犬山線新鵜沼行き 約25分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">名鉄春日井駅</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚖</div>
+                                    <p class="acd_text1">無料タクシー 約5分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conteiner-fluid root2 root2_bottom">
+        <div class="card-text root_text2">
+            <p>空港からお越しのお客様</p>
+            <span>BY AIR</span>
+            <p class="tap">方向をタップするとルートが表示されます</p>
+        </div>
+        <div class="accordion" id="acd1">
+            <div class="row m-0">
+                <div class="col-md-1 col-lg-2"></div>
+                <div class="col-md-5 col-lg-4 p-0">
+                    <div class="accordion-item acd_border acd_space">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button acd_btn7" data-bs-toggle="collapse" data-bs-target="#d42">
+                                中部国際空港
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="d42">
+                            <div class="accordion-body acd_group1 train_group">
+                                <div>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚊
+                                    </div>
+                                    <p class="acd_text1">名鉄空港線ミュースカイ</p>
+                                    <p class="acd_text2">新鵜沼行き 約57分</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">名鉄春日井駅</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚖</div>
+                                    <p class="acd_text1">無料タクシー 約5分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item nobtn acd_space">
+                        <h2 class="accordion-header">
+                            <button class="acd_btn8_xl">
+                                中部国際空港
+                            </button>
+                        </h2>
+                        <div>
+                            <div class="accordion-body acd_group1 train_group">
+                                <div>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚊
+                                    </div>
+                                    <p class="acd_text1">名鉄空港線ミュースカイ</p>
+                                    <p class="acd_text2">新鵜沼行き 約57分</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                </div>
+                                <div>
+                                    <p class="acd_bage2">名鉄春日井駅</p>
+                                    <p class="line">|</p>
+                                    <div class="car1">🚖</div>
+                                    <p class="acd_text1">無料タクシー 約5分</p>
+                                    <p class="line2">|</p>
+                                    <p class="dot">・</p>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4 p-0">
+                    <div class="accordion-item acd_border acd_space">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button acd_btn8" data-bs-toggle="collapse" data-bs-target="#d43">
+                                県営名古屋空港
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="d43">
+                            <div class="accordion-body acd_group1 train_group">
+                                <div>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚖
+                                    </div>
+                                    <p class="acd_text1">タクシー 約40分</p>
+                                    <p class="acd_text2">予想料金 約6000円</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item nobtn acd_space">
+                        <h2 class="accordion-header">
+                            <button class=" acd_btn9_xl">
+                                県営名古屋空港
+                            </button>
+                        </h2>
+                        <div>
+                            <div class="accordion-body acd_group1 train_group">
+                                <div>
+                                    <p class="line">|</p>
+                                    <div class="car1">
+                                        🚖
+                                    </div>
+                                    <p class="acd_text1">タクシー 約40分</p>
+                                    <p class="acd_text2">予想料金 約6000円</p>
+                                    <p class="line2">|</p>
+                                    <P class="dot">・</P>
+                                    <h6 class="acd_brown">嵓屋 猪鹿蝶</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-lg-2"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="manor_card" class="container-fluid p-0">
+        <div class="card">
+            <img id="manor" class="img-fluid" src="../images/manor-house-2359884.jpg" style="object-fit: cover;">
+            <div id="manor-text" class="card-img-overlay text-white mt-2">
+                <p class="ps-4">大正五年創業の<br>老舗宿が新たに甦る。<br>山上の春日井サボテンを背に西を見れば壮麗な<br>
+                    木曽川の景色が広がる。<br>嵓屋 猪鹿蝶はおもてなしという<br>
+                    灯火をご用意しております。<br>大切な方との忘れられない新しい春日井の旅を。</p>
+            </div>
+        </div>
+    </div>
+    <div id="planbox" class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 p-0"><h6 class="border border-1 m-3 mb-0 p-4 bg-dark text-white">空室検索<span>→</span></h6></div>
+            <div class="col-12 col-md-4 p-0"><h6 id="plan" class="border border-1 m-3 mb-0 p-4">ご宿泊プラン<span>→</span></h6></div>
+            <div class="col-12 col-md-4 p-0"><h6 class="border border-1 m-3 p-4">空室カレンダー<span>→</span></h6></div>
+        </div>
+    </div>
+    <div id="tel1" class="container-fluid">
+        <h3 class="p-1">TEL.<span id="telep">0568-00-0000</span></h3>
+        <p>
+            夕食時は、お電話がつながりにくい場合がございます。比較的つながりやすい時間帯(11:00～17:00頃)におかけ直しください。
+        </p>
+        <li><a href="#">ご予約状況の確認<span>→</span></a></li>
+        <li><a href="#">ご予約内容の変更<span>→</span></a></li>
+        <li><a href="#">ご予約キャンセル<span>→</span></a></li>
+    </div>
+    <div id="planbox-2" class="container">
+        <div class="d-flex flex-wrap align-items-center">
+            <div>空室検索</div>
+            <div class="dropdown">
+                <button id="weekday" class="btn dropdown-toggle" data-bs-toggle="dropdown"><span id="check">チェックイン日</span><br>
+                    <span id="time"></span><span class="day">年</span><span id="time2"></span><span class="day">月</span><span id="time3"></span><span class="day day2">日</span></button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item text-center"><span id="date2"></span><span>年</span><span id="date3"></span><span>月</span></li>
+                    <li class="dropdown-item">
+                        <div style="width:650px;">
+                            <button id="prev" type="button">前の月</button>
+                            <button id="next" type="button">次の月</button>
+                            <div id="calendar"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="days" id="dayafter">日付未定</label><br>
+                <input class="form-check-input" type="checkbox" id="days">
+            </div>
+            <div class="dropdown">
+                <button id="Stop" class="btn dropdown-toggle" data-bs-toggle="dropdown"><span id="stop">泊数</span><br>
+                <span id="stop1">1</span>泊</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">1</li>
+                    <li class="dropdown-item">2</li>
+                    <li class="dropdown-item">3</li>
+                    <li class="dropdown-item">4</li>
+                    <li class="dropdown-item">5</li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button id="Num" class="btn dropdown-toggle" data-bs-toggle="dropdown"><span id="num1">人数(1部屋あたり)</span><br>
+                <span id="num2">2</span>名様</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">1</li>
+                    <li class="dropdown-item">2</li>
+                    <li class="dropdown-item">3</li>
+                    <li class="dropdown-item">4</li>
+                    <li class="dropdown-item">5</li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button id="Num" class="btn dropdown-toggle" data-bs-toggle="dropdown"><span id="num1">部屋数</span><br>
+                <span id="num2">1</span>泊</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">1</li>
+                    <li class="dropdown-item">2</li>
+                    <li class="dropdown-item">3</li>
+                    <li class="dropdown-item">4</li>
+                    <li class="dropdown-item">5</li>
+                </ul>
+            </div>
+            <div id="access" class="align-self-center p-4">
+                <a href="#">この条件で検索</a>
+            </div>
+            <div id="plan2" class="align-self-center p-4">
+                <a href="#">ご宿泊プラン<span>→</span></a> 
+            </div>
+            <div id="calendar2" class="align-self-center p-4">
+                <a href="#">空室カレンダー<span>→</span></a>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap align-items-center mt-5">
+            <div id="tel2">
+                <h5>TEL.<span>0568-61-2204</span></h5>
+            </div>
+            <div id="info">
+                夕食時は、お電話がつながりにくい場合がございます。<br>
+                比較的つながりやすい時間帯(11:00～17:00頃)に<br>
+                おかけ直しください。
+            </div>
+            <div class="ms-auto">
+                <div id="info2" class="d-flex align-items-center">
+                    <div>
+                        ご利用状況の確認<span class="arrow2">→</span>
+                    </div>
+                    <div>
+                        ご予約内容の変更<span class="arrow2">→</span>
+                    </div>
+                    <div>
+                        ご予約キャンセル<span class="arrow2">→</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="container-fluid pt-5 mt-3">
+        <div class="row">
+            <div id="wedding-md" class="col-md-5">
+                <div class="row">
+                    <div id="wedding" class="col-5 pe-0">
+                        <img class="fluid" src="../images/wedding-dresses-1486005_1920.jpg" style="object-fit: cover;">
+                    </div>
+                    <div id="wedding-banner" class="col-7 p-0 text-center bg-white">
+                        <p id="mariel" class="mt-2"><span>マリエールガーデンバーベナ×猪鹿蝶</span></p>
+                        <p id="wedding-text">wedding</p>
+                        <h4>家族の<span id="redramp">灯</span>り</h4>
+                        <p id="mariel2">家族の歴史を紡ぐ旅</p>
+                        <p id="mariel3">高級旅館でおもてなしウェディング</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row mt-3">
+                    <div id="cake" class="col-6 pe-0">
+                        <img class="fluid" src="../images/cake-1971552_1920.jpg" style="object-fit: cover;">
+                    </div>
+                    <div id="rogo5" class="col-6 text-center">
+                        <p id="rogo5-text">嵓屋<span>明治二八年創業</span></p>
+                        <h6>猪鹿蝶</h6>
+                        <p id="online">オンラインショップ</p>
+                        <img id="spiral3" src="../images/spiral-2790215_640.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div id="staff" class="row text-center bg-white mt-4 m-1 p-3">
+                    <div>スタッフ募集</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer-info1" class="row">
+            <div id="rogo6" class="col-md-2 text-center">
+                <div id="rogo6-h">
+                    <p id="rogo6-text">嵓屋<span>明治二八年創業</span></p>
+                    <h6>猪鹿蝶</h6>
+                </div>
+                <p id="online2">KURAYA<br>INOSHIKACHO</p>
+                <img id="spiral4" src="../images/spiral-2790215_640.png" alt="">
+            </div>
+            <div class="col-md-10 p-0 pt-3">
+                <div class="row m-0 p-0">
+                    <nav id="nav4" class="nav">
+                        <a href="#" class="nav-link nav3 p-1 pt-3 me-4">ホーム</a>
+                        <a href="#" class="nav-link nav3 p-1 pt-3 me-4">コンセプト</a>
+                        <a href="#" class="nav-link nav3 p-1 pt-3 me-4">お部屋</a>
+                        <a href="#" class="nav-link nav3 p-1 pt-3 me-4">お料理</a>
+                        <a href="#" class="nav-link nav3 p-1 pt-3 me-4">温泉</a>
+                        <a href="#" class="nav-link nav3 p-1 pt-3 me-4">館内案内</a>
+                        <a href="#" class="nav-link nav3 p-1 pt-3 me-4">過ごし方</a>
+                    </nav>
+                </div>
+                <div id="botton5" class="row p-0 m-0">
+                    <a href="#" class="col-3 p-3 mt-4 text-center botton3">ご宿泊プラン</a>
+                    <a href="#" class="col-3 p-3 mt-4 text-center botton4">空室検索</a>
+                </div>
+                <div class="row p-0 m-0">
+                    <div id="footer-info" class="mt-3 p-0">
+                        <a href="#">アクセス</a>
+                        <a href="#">春日井散策</a>
+                        <a href="#">嵓屋だより</a>
+                        <a href="#">お知らせ</a>
+                        <a href="#">よくあるご質問</a>
+                        <a href="#">プライバシーポリシー</a>
+                        <a href="#">お問い合わせ</a>
+                        <a href="#">お得意様専用ページ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="flex2">
+            <div id="follow" class="">
+                <p class="ptext">嵓屋 猪鹿蝶（くらや いのしかちょう）</p>
+                <p class="ptext">〒486-0000 愛知県春日井市松河戸町777</p>
+                <p class="ptext" id="tel5">TEL.<span>0568-00-0000</span></p>
+                <p id="allright">© INOSHIKACHO All Rights Reserved.</p>
+            </div>
+            <div id="icon4">
+                <p class="text-center ms-5">FOLLOW US</p>
+                <ul>
+                    <li id="facebook3">
+                        <img src="../images/facebook-2935402_640.png" alt="">
+                    </li>
+                    <li id="insta2">
+                        <img src="../images/icon-1562139_651.png" alt="">
+                    </li>
+                    <li id="wifi3">
+                        <img src="../images/wifi-2_640.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/vendor/jquery-1.10.2.min.js"></script>
+    <script src="../JS/my.js"></script>
+    <script src="../JS/center.js"></script>
+</body>
+</html>

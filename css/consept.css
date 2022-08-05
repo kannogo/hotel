@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+/*----------- concept ------------ */
+
+#concept_mt img {
+    height: 240px;
+}
+#concept {
+    text-align: center;
+}
+#concept h5 {
+    writing-mode: vertical-lr;
+    letter-spacing: 1px;
+}
+#concept2 {
+    background-color: rgb(0, 0, 0, 0.3);
+    display: inline-block;
+    padding: 10px;
+}
+#concept2 p {
+    font-size: 10px;
+    display: inline-block;
+}
+#lotte {
+    text-align: center;
+}
+#lotte2 {
+    writing-mode: vertical-rl;
+    display: inline-block;
+    margin-top: 4rem;
+    text-shadow: 0 0 10px rgb(14, 14, 14);
+}
+#lotte_world img {
+    height: 400px;
+}
+
+@media screen and (min-width:769px) {
+    #concept_mt img {
+        height: 350px;
+    }
+    #concept2 {
+        margin-top: 50px;
+        padding: 20px 1px 20px 1px;
+    }
+    #concept2 h5 {
+        letter-spacing: 3px;
+        font-size: 22px;
+        margin-bottom: 3px;
+    }
+    #concept p {
+        padding: 0;
+    }
+    #lotte_world img {
+        height: 800px;
+    }
+    #lotte2 {
+        font-size: 35px;
+        margin-top: 140px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #concept_mt {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    
+    #lotte_world {
+        border: none;
+    }
+    #lotte_world img {
+        width: 80%;
+        height: 600px;
+        margin: 0 auto;
+    }
+    #lotte2 {
+        font-size: 28px;
+        margin-top: 100px;
+    }
+}
+
+/* -------------- flame --------------- */
+
+#flame_image {
+    height: 600px;
+}
+#flame1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+#flame p {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 10px;
+    letter-spacing: 1px;
+}
+#flame2 {
+    margin-top: 40px;
+}
+
+@media screen and (min-width:769px) {
+    #flame_image {
+        height: 900px;
+    }
+    #flame1 {
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #flame3 {
+        display: inline-block;
+        writing-mode: vertical-rl;
+        text-align: left;
+    }
+    #flame3 p {
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+    #flame2 {
+        margin-top: 0;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    
+    #flame_image {
+        height: 350px;
+    }
+    #flame {
+        writing-mode: vertical-rl;
+        display: inline-block;
+    }
+    #flame1 {
+        font-size: 20px;
+        text-align: start;
+        margin-top: 5px;
+        line-height: 50px;
+    }
+    #flame3 p {
+        font-size: 13px;
+    }
+}
+
+/* ------------------- steam ------------------ */
+
+#history {
+    background-color: rgb(249, 245, 239);
+    padding: 50px 0 30px 0;
+}
+#steam h5 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+#steam img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+#history_img {
+    display: none;
+}
+#history2 {
+    font-size: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+#history2 p {
+    line-height: 10px;
+    font-weight: bold;
+}
+#history2 h5 {
+    display: none;
+}
+
+@media screen and (min-width:769px) {
+    #steam img {
+        height: 400px;
+    }
+    #history_img {
+        display: flex;
+    }
+    #history_img img {
+        height: 230px;
+        width: 100%;
+    }
+    #history_rl {
+        text-align: right;
+    }
+    #history2 {
+        writing-mode: vertical-rl;
+        text-align: left;
+        font-size: 12px;
+        padding-right: 15%;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        font-size: 16px;
+    }
+    #history2 p {
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width:1201px) {
+    #history {
+        padding-top: 130px;
+    }
+    #steam h5 {
+        display: none;
+    }
+    #history2 h5 {
+        display: block;
+        font-size: 25px;
+    }
+    #history2 {
+        padding-right: 2%;
+        margin-top: 0;
+    }
+    #history2 p {
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    #history {
+        position: relative;
+        height: 1500px;
+    }
+    #history_img {
+        position: absolute;
+        left: 27.2%;
+    }
+}
+
+/* --------------- venice ---------------- */
+#venice_group {
+    margin-top: 30px;
+}
+#venice2 {
+    font-size: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (min-width:769px) {
+    #venice2 {
+        padding-top: 20px;
+        writing-mode: vertical-rl;
+        text-align: left;
+        margin-bottom: 50px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding-right: 20%;
+    }
+    #venice2 p {
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width:1201px) {
+    #venice_group {
+        margin-top: 200px;
+    }
+    #venice {
+        padding: 20px;
+    }
+    #venice2 {
+        padding-right: 10%;
+    }
+    #venice2 p {
+        line-height: 20px;
+    }
+}

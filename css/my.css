@@ -1,0 +1,1591 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 70px;
+    height: 100%;
+}
+
+/* ------------- pagetop -------------- */
+#page_top {
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    opacity: 0;
+    transition: all is ease;
+    z-index: 10;
+}
+#page_top.show {
+    opacity: 0.6;
+    transform: none;
+}
+#page_top a {
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-decoration: none;
+}
+#page_top a::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 30px;
+    color: #120f11;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -40px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    z-index: 10;
+}
+#page_top a::after {
+    content: 'TOP';
+    font-size: 18px;
+    position: absolute;
+    top:45px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    color: #1d1b1c;
+    z-index: 10;
+}
+
+/* ----------- sticty1 ---------- */
+
+#sticky1 {
+    background-color: white;
+    position: fixed;
+}
+#sticky1 ul {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+#sticky1 li {
+    list-style-type: none;
+    margin-left: 2rem;
+    
+}
+.li-border {
+    border-left: 1px dashed;
+    padding-left: 15px;
+    line-height: 15px;
+}
+#sticky1 li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+#spi {
+    display: inline-block;
+    width: 30px;
+}
+#spiral {
+    width: 100%;
+}
+#phone {
+    width: 150px;
+}
+#tel {
+    width: 20%;
+}
+#icon2 {
+    background-color: black;
+}
+.sticky {
+    display: block;
+    position: fixed;
+}
+#offheader h5 {
+    margin: 0 auto;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 50px;
+}
+#offheader span {
+    font-size: 16px;
+}
+.offcanvas-body {
+    margin: 0 auto;
+    height: 100%;
+}
+#search_group li {
+    font-size: 12px;
+    border-bottom: 1px dotted;
+
+}
+#search_group #date {
+    font-size: 30px;
+    background-color: rgba(46, 36, 36, 0.9);
+    border: none;
+    color: white;
+}
+#search_group #check_block {
+    border: none;
+}
+#search_group #checkbox {
+    transform: scale(2);
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#search_group #dropdown2 {
+    margin-top: 5px;
+    font-size: 30px;
+    background-color: rgba(46, 36, 36, 0.9);
+    color: white;
+    border: none;
+}
+#search_group span {
+    font-size: 20px;
+}
+#search_group #dropdown3 {
+    margin-top: 5px;
+    font-size: 30px;
+    background-color: rgba(46, 36, 36, 0.9);
+    color: white;
+    border: none;
+}
+#search_group #dropdown4 {
+    margin-top: 5px;
+    font-size: 30px;
+    background-color: rgba(46, 36, 36, 0.9);
+    color: white;
+    border: none;
+}
+#search_group .button {
+    background-color: rgb(112, 96, 91);
+    padding: 20px 60px;
+    padding-bottom: 10px;
+    border: none;
+}
+#search_group .button h5 {
+    font-size: 14px;
+}
+.offcanvas-body .button2 {
+    text-align: center;
+    margin: 80px;
+}
+.offcanvas-body .button2 #button2_text {
+    background-color: white;
+    margin: 0 10px;
+    padding: 20px 70px;
+    font-size: 16px;
+}
+.offcanvas-body .button2 span {
+    margin-left: 30px;
+}
+.tel_search {
+    text-align: center;
+}
+.tel_search p {
+    font-size: 18px;
+}
+.tel_search .maintel {
+    font-size: 30px;
+    margin-left: 25px;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+.tel_search space {
+    font-size: 40px;
+    border-bottom: 1px solid;
+    padding-bottom: 8px;
+}
+.tel_search .maintel_text {
+    font-size: 16px;
+    margin: 0;
+}
+#tel_search2 {
+    margin-top: 30px;
+}
+.tel_search #tel_search2 a {
+    color: white;
+    font-size: 16px;
+    margin: 0 10px;
+}
+.tel_search #tel_search2 span {
+    padding-left: 10px;
+}
+#button_close {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    transform: scale(2);
+    color: white;
+    width: 25vw;
+    padding-left: 16rem;
+}
+#button_close p {
+    font-size: 10px;
+}
+
+
+@media screen and (min-width:1400px) {
+    #sticky1 {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #sticky1 {
+        display: none;
+    }
+}
+@media screen and (max-width:1400px) {
+    #button_close {
+        padding-left: 14rem;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    #sticky1 li {
+        margin-left: 5px;
+        padding-right: 3px;
+    }
+}
+
+
+
+
+
+
+
+#nav {
+    font-family: HGP行書体;
+}
+#nav p {
+    display: inline-block;
+    line-height: 18px;
+    font-size: 16px;
+}
+#nav span {
+    font-size: 10px;
+}
+#nav #name {
+    font-size: 25px;
+}
+#hum li {
+    color: burlywood;
+}
+#hum li span {
+    color: black;
+}
+#logo1 {
+    margin: 30px;
+    text-align: center;
+}
+#insta {
+    width: 60px;
+    background-color: black;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 50%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+#insta img {
+    width: 100%;
+}
+#facebook {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+#facebook img {
+    width: 40px;
+}
+#wifi {
+    width: 60px;
+    background-color: black;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+#wifi img {
+    width: 40px;
+}
+#spiral2 {
+    width: 5%;
+    display: none;
+}
+
+@media screen and (min-width:1200px) {
+    #navbar1 {
+        display: none;
+    }
+}
+
+
+
+/* ------------ インジケーター -----------*/
+
+#indicator {
+    position: relative;
+}
+#butt {
+    position: absolute;
+    bottom: -3.5rem;
+}
+#indi {
+    margin: 0 5px;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+}
+.nav-item:hover {
+    background-color: rgb(244, 233, 233);
+    opacity: 0.5;
+}
+
+#plan {
+    background-color: rgb(233, 227, 227);
+}
+#sarch {
+    background-color: brown;
+}
+#sarch a {
+    color: white;
+}
+#nav2{
+    justify-content: end;
+}
+.facebook {
+    margin: 5px 0 0 0;
+    padding: 0;
+    width: 50%;
+}
+.instagram {
+    margin: 5px 0 0 0;
+    padding: 0;
+    width: 50%;
+}
+a.nav-link-2 {
+    padding: 5px;
+}
+.wifi {
+    margin: 5px 0 0 0;
+    width: 70%;
+}
+#rogo,#rogo2 {
+    margin: 0;
+    writing-mode: vertical-rl;
+}
+.card {
+    position: relative;
+}
+#rogo {
+    position: absolute;
+    top: 5rem;
+    left: 8rem;
+    font-family: HGP行書体;
+}
+#rogo2 {
+    position: absolute;
+    top: 5rem;
+    left: 4.5rem;
+    font-size: 3rem;
+    font-family: HGP行書体;
+}
+#rogo span {
+    font-size: 15px;
+}
+#alf {
+    position: absolute;
+    bottom: 4rem;
+    left: 3.5rem;
+    font-size: 12px;
+}
+#alf p {
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: rgb(145, 142, 142);
+}
+#font1 {
+    padding-top: 20px;
+}
+#font2 {
+    margin: 0;
+    padding: 0;
+    padding-right: 20%;
+    writing-mode: vertical-rl;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    
+}
+
+@media screen and (max-width:769px) {
+    #nav3, #nav2 {
+        display: none;
+    }
+}
+@media screen and (min-width:769px) {
+    #butt {
+        bottom: 0;
+    
+    }
+}
+
+
+/* ------------ img2 ------------- */
+
+#img-naga {
+    height: 50vh;
+}
+#boxtext {
+    font-size: 12px;
+}
+#consept {
+    margin: 0 auto;
+    width: 70%;
+}
+#consept a {
+    text-decoration: none;
+    color: white;
+}
+#img-naga2 {
+    display: none;
+}
+#card1 h2 {
+    font-size: 18px;
+}
+#arrow1 {
+    padding-left: 30px;
+}
+
+@media screen and (min-width:769px) {
+    #card1  {
+        writing-mode: vertical-rl;
+        position: relative;
+    }
+    #img-naga {
+        display: none;
+    }
+    #img-naga2 {
+        display: inline-block;
+        height: 50vh;
+        width: 98.8vw;
+        margin: 0;
+        padding: 0;
+    }
+    #card1 h2 {
+        font-size: 25px;
+    }
+    #boxtext p {
+        line-height: 50px;
+        font-size: 16px;
+    }
+    #consept {
+        display: inline-block;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    #arrow1 {
+        writing-mode: horizontal-tb;
+        padding: 0;
+    }
+    #position {
+        position: absolute;
+        top: 8rem;
+        left: 5rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #img-naga2 {
+        display: inline-block;
+        height: 70vh;
+        width: 98.8vw;
+        margin: 0;
+        padding: 0;
+    }
+    #boxtext1 {
+        margin:50px;
+        padding-right: 130px;
+    }
+    #boxtext {
+        margin: 50px;
+        margin-bottom: 0;
+    }
+    #boxtext #intext {
+        line-height: 100px;
+    }
+    #position {
+        position: absolute;
+        top: 15rem;
+        left: 20rem;
+    }
+}
+
+/* ----------- info ------------- */
+
+#container3 {
+    position: relative;
+}
+#info1 {
+    writing-mode:vertical-lr;
+    font-size: 18px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 0;
+    letter-spacing: 3px;
+
+
+}
+#info2 {
+    text-decoration: none;
+    color: black;
+}
+.day {
+    font-size: 12px;
+}
+.day span {
+    color: brown;
+}
+#more a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px dashed gray;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width:769px) {
+    #info1 {
+        font-size: 20px;
+        padding-left: 10rem;
+    }
+    .day {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #info1 {
+        padding-left: 18rem;
+    }
+    #more {
+        position: absolute;
+        bottom: 1rem;
+        right: -8rem;
+        font-size: 20px;
+    }
+}
+
+/* ----------- baner ----------- */
+
+#baner {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid;
+    width: 300px;
+    height: 200px;
+}
+#text1 {
+    font-size: 10px;
+    padding: 5px;
+}
+#goto {
+    padding-left: 20px;
+    font-family: Meiryo,メイリオ;
+}
+#goto h3 {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 5px solid yellow;
+    line-height: 10px;
+    margin-bottom: 15px;
+}
+#site1 {
+    position: absolute;
+    right: 2rem;
+    z-index: 5;
+    font-family: Meiryo,メイリオ;
+}
+#site1 h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+#success {
+    width: 100%;
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+#success a {
+    color: white;
+    text-decoration: none;
+}
+#success h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+#success-lg {
+    display: none;
+}
+#steak {
+    width: 30%;
+    position: absolute;
+    bottom: 2rem;
+}
+#b-img2 {
+    width: 40%;
+    height: 75%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.arrow {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: solid 2px white;
+    border-right: solid 2px white;
+    transform: rotate(45deg);
+}
+
+@media screen and (min-width:769px) {
+    #baner {
+        width: 100%;
+        max-width: 920px;
+        height: 100px;
+    }
+    #steak {
+        width: 15%;
+        height: 70%;
+        bottom: 0;
+    }
+    #goto {
+        display: inline-block;
+        position: absolute;
+        top: 2rem;
+        left: 10rem;
+    }
+    #site1 {
+        left: 23rem;
+        top: 1.5rem;
+        display: none;
+    }
+    #success {
+        display: none;
+    }
+    #b-img2 {
+        width: 25%;
+        height: 100%;
+    }
+    #success-lg {
+        position: relative;
+        display: block;
+        position: absolute;
+        top: 0.3rem;
+        right: 6rem;
+    }
+    #success-lg img {
+        width: 35%;
+    }
+    #baner-mark {
+        position: absolute;
+        top: 1.7rem;
+        left: 0.8rem;
+        color: white;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #site1 {
+        display: block;
+    }
+}
+
+/* ---------- corse ------------- */
+
+#corse1 img {
+    height: 40vh;
+    transition-duration: 3s;
+}
+#corse1 img:hover {
+    transform: scale(1.2);
+}
+#img1 {
+    text-align: center;
+    position: relative;
+    padding: 2px 2px 2px 0;
+    overflow: hidden;
+    background-color: black;
+    transition: 0.5s;
+}
+#img1 a img {
+    display: block;
+    transition: 1s;
+}
+#img1 a:hover img {
+    opacity: 0.3;
+}
+.te-info {
+    background-color: white;
+    text-align: center;
+    width: 80px;
+    height: 200px;
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+.te-info3 {
+    height: 230px;
+}
+.text-h {
+    margin: 0 auto;
+    padding: 20px 25px;
+    writing-mode: vertical-lr;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.text-min {
+    font-size: 10px;
+}
+#img2 {
+    padding: 2px 0 2px 2px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    transition: 0.5s;
+}
+#img2 a img {
+    display: block;
+    transition: 1s;
+}
+#img2 a:hover img {
+    opacity: 0.3;
+}
+#img3 {
+    padding: 2px 0 2px 2px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    transition: 0.5s;
+}
+#img3 a img {
+    display: block;
+    transition: 1s;
+}
+#img3 a:hover img {
+    opacity: 0.3;
+}
+#img4 {
+    padding: 2px 0 2px 2px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    transition: 0.5s;
+}
+#img4 a img {
+    display: block;
+    transition: 1s;
+}
+#img4 a:hover img {
+    opacity: 0.3;
+}
+#corse-image {
+    padding: 2px 0 2px 2px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    transition: 0.5s;
+}
+#corse-image a img {
+    display: block;
+    transition: 1s;
+}
+#corse-image a:hover img {
+    opacity: 0.3;
+}
+#corse-image2 {
+    padding: 2px 0 2px 2px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    transition: 0.5s;
+}
+#corse-image2 a img {
+    display: block;
+    transition: 1s;
+}
+#corse-image2 a:hover img {
+    opacity: 0.3;
+}
+
+@media screen and (min-width:769px) {
+    
+    #corse1 img {
+        height: 70vh;
+    }
+    #img2 {
+        padding-right: 2px;
+    }
+    #img3 {
+        padding-top: 2px;
+    }
+    #img4 {
+        padding-top: 2px;
+    }
+    .te-info {
+        height: 230px;
+        top:0;
+    }
+    .te-info3 {
+        height: 270px;
+    }
+    .text-h {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .te-info {
+        left: 40%;
+    }
+}
+
+/* ------------ corse2 ---------- */
+#corse2 {
+    font-weight: bold;
+    overflow: hidden;
+}
+#corse2 img {
+    width: 100%;
+    transition-duration: 3s;
+}
+#corse2 img:hover {
+    transform: scale(1.2);
+}
+#corse-image {
+    position: relative;
+    padding: 0;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+#corse-image2 {
+    position: relative;
+    padding: 0 0 0 2px;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+.te-infolg {
+    padding: 20px 20px 5px 20px;
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+.te-infolg .te-jp {
+    writing-mode: vertical-rl;
+    margin-right: 0 auto;
+}
+.te-infolg .te-en {
+    font-size: 10px;
+}
+.te-infolg .te-jp span {
+    font-size: 20px;
+}
+
+@media screen and (min-width:500px) {
+    .te-infolg {
+        padding: 20px 40px 5px 40px;
+        top: 30%;
+        left: 35%;
+    }
+}
+
+@media screen and (min-width:769px) {
+    #corse-image, #corse-image2 {
+        margin-top: 100px;
+    }
+}
+
+/* ------------- card1 -------------- */
+
+#Ave {
+    position: relative;
+    padding-right: 0;
+    padding-left: 30px;
+    background-color: rgb(248, 240, 230);
+}
+#avenue {
+    margin: 30px 0 0 0;
+    padding: 0;
+    width: 100%;
+    text-align: right;
+    overflow: hidden;
+}
+#avenue img {
+    width: 90%;
+    height: 40vh;
+    transition-duration: 2s;
+}
+#avenue img:hover {
+    transform: scale(1.1);
+}
+#card2 {
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    width: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: -5rem;
+    left: 1.2rem;
+}
+#special {
+    border: 1px solid;
+    text-align: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    color: rgb(172, 152, 126);
+    background-color: white;
+    position: absolute;
+    top: -30px;
+    right: 0.2rem;
+}
+#special h6 {
+    font-size: 10px;
+    padding-top: 28px;
+}
+#card2 h2 {
+    display: none;
+}
+#card2 h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+#card2 h4 {
+    font-size: 12px;
+}
+#card2 p {
+    font-size: 10px;
+}
+#card2 hr {
+    border-top: 1px dashed #ccc;
+}
+#Ave {
+    margin-bottom: 100px;
+}
+
+@media screen and (min-width:769px) {
+    
+    #avenue img {
+        width: 80%;
+        height: 80vh;
+    }
+    #card2 {
+        width: 350px;
+        height: 400px;
+        top: 25rem;
+        left: 4rem;
+    }
+    #special {
+        width: 140px;
+        height: 140px;
+        padding-top: 0.5rem;
+        top: -3rem;
+        right: 1rem;
+    }
+    #spe2 {
+        border: 1px solid;
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+        margin-top: 1px;
+        margin-left: 9px;
+    }
+    #special h6 {
+        font-size: 16px;
+        padding-top: 2.2rem;
+    }
+    #card2 h3 {
+        display: none;
+    }
+    #card2 h2 {
+        display: block;
+        writing-mode: vertical-rl;
+        letter-spacing: 10px;
+        line-height: 50px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    #card2 h4 {
+        font-size: 14px;
+        margin-left: 5px;
+        color: rgb(187, 178, 178);
+    }
+    #card2 p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #card2 {
+        top: 8.5rem;
+        height: 31%;
+    }
+}
+
+/* --------------- info2 ---------------- */
+#access1 {
+    background-color: rgb(250, 242, 232);
+    margin-top: 250px;
+    padding-bottom: 40px;
+}
+#access1 h6 {
+    padding-left: 20%;
+}
+#access1 h6 span {
+    padding-left: 60%;
+}
+
+@media screen and (max-width:769px) {
+    #Ave {
+        padding-bottom: 50px;
+        margin-bottom: 0;
+    }
+    #access1 {
+        margin-top: 20px;
+        padding: 0;
+    }
+    #access1 h6 {
+        padding-left: 10%;
+    }
+    #access1 h6 span {
+        padding-left: 20%;
+    }
+}
+
+@media screen and (min-width:769px) {
+    #Ave {
+        margin-bottom: 0;
+    }
+}
+
+/* ------------ monor --------------- */
+
+#manor {
+    height: 50vh;
+}
+#manor p {
+    font-size: 10px;
+}
+#manor-text {
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+
+@media screen and (min-width:769px) {
+    #manor {
+        height: 60vh;
+    }
+    #manor-text {
+        writing-mode: vertical-rl;
+        line-height: 80px;
+        font-size: 17px;
+        
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #manor {
+        height: 70vh;
+    }
+}
+
+/* ------------- plan --------------- */
+#planbox h6 {
+    font-size: 10px;
+}
+#plan {
+    background-color: antiquewhite;
+}
+#planbox span {
+    padding-left: 50%;
+}
+#tel1 #telep {
+    font-size: 40px;
+}
+#tel1 h3 {
+    border-bottom: 1px solid;
+}
+#tel1 p {
+    font-size: 12px;
+    margin: 20px 0;
+}
+#tel1 li {
+    text-align: center;
+    list-style-type: none;
+    letter-spacing: 1px;
+}
+#tel1 a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    line-height: 30px;
+}
+#tel1 li span {
+    padding-left: 10px;
+}
+
+/* -------------- checkin ---------------- */
+
+#check { 
+    font-size: 14px;
+}
+#time {
+    font-size: 30px;
+}
+#time2, #time3 {
+    font-size: 30px;
+}
+#weekday {
+    border-bottom: 1px dotted;
+}
+.day {
+    font-size: 10px;
+}
+.day2 {
+    padding-right: 10px;
+}
+.form-check {
+    padding: 0;
+    font-size: 14px;
+    margin-left: 10px;
+}
+#days {
+    font-size: 30px;
+    border-radius: 0%;
+    margin-left: 0px;
+}
+
+/* ---------- calender -------------- */
+
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    margin: 10px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+
+td:first-child {
+    color: red;
+}
+
+td:last-child {
+    color: royalblue;
+}
+
+td.is-disabled {
+    color: #ccc;
+}
+
+/* --------------- stop --------------- */
+
+#Stop, #Num {
+    border-bottom: 1px dotted;
+}
+#stop {
+    font-size: 12px;
+}
+#stop1 {
+    font-size: 30px;
+}
+#num1 {
+    font-size: 12px;
+}
+#num2 {
+    font-size: 30px;
+}
+#access {
+    background-color: rgb(87, 65, 65);
+    margin-left: 1rem;
+}
+#access a {
+    text-decoration: none;
+    color: white;
+}
+#plan2 a, #calendar2 a {
+    text-decoration: none;
+    color: black;
+}
+#plan2 {
+    background-color: rgb(234, 228, 218);
+    margin-left: 3rem;
+}
+#plan2 span {
+    padding-left: 2rem; 
+}
+#calendar2 {
+    border: solid 1px rgb(220, 215, 215);
+    margin-left: 1rem;
+}
+#calendar2 span {
+    padding-left: 2rem;
+}
+#tel2 {
+    width: 300px;
+}
+#tel2 span {
+    font-size: 35px;
+}
+#info {
+    font-size: 14px;
+}
+#info2 {
+    font-size: 14px;
+}
+.arrow2 {
+    padding: 0 1rem;
+}
+
+@media screen and (min-width:769px) {
+    #planbox {
+        display: none;
+    }
+    #tel1 {
+        display: none;
+    }
+    #planbox-2 {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #planbox-2 {
+        display: none;
+    }
+}
+
+/* -------------- footer ------------------- */
+
+#footer {
+    background-color: rgb(240, 235, 229);
+    margin-bottom: 40px;
+}
+#wedding img{
+    width: 100%;
+    height: 15vh;
+}
+#mariel {
+    font-size: 10px;
+    color: white;
+}
+#mariel span {
+    background-color: orange;
+}
+#redramp {
+    color: rgb(238, 62, 62);
+}
+#mariel2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    line-height: 10px;
+}
+#mariel3 {
+    font-size: 10px;
+    line-height: 10px;
+}
+#wedding-banner {
+    position: relative;
+}
+#wedding-text {
+    font-family: 'Sacramento', cursive;
+    position: absolute;
+    font-size: 30px;
+    letter-spacing: 5px;
+    opacity: 0.1;
+    top: 0.3rem;
+    left: 1rem;
+}
+#rogo5-text {
+    font-size: 14px;
+    margin: 30px 0 0 0;
+}
+#rogo5-text span {
+    font-size: 10px;
+    padding-left:5px;
+}
+#cake img {
+    width: 100%;
+    height: 15vh;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+#rogo5 {
+    position: relative;
+    font-family: HGP行書体;
+}
+#rogo5 h6 {
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+#online {
+    padding-top: 0;
+    font-size: 14px;
+}
+#spiral3 {
+    width: 40%;
+    opacity: 0.4;
+    position: absolute;
+    top: 1.5rem;
+    left: 2.5rem;
+}
+#staff {
+    border: 1px solid;
+}
+
+/* ------------- rogo6 --------------- */
+
+#rogo6 {
+    margin-top: 30px;
+    position: relative;
+    font-family: HGP行書体;
+}
+#rogo6-text {
+    font-size: 14px;
+    margin: 0;
+}
+#rogo6-text span {
+    font-size: 10px;
+    padding-top: 5px
+}
+#rogo6-h h6 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+#rogo6-h {
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-align: center;
+    left: 40%;
+}
+#rogo6-text span {
+    font-size: 10px;
+}
+#spiral4 {
+    width: 30%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0.5rem;
+    left: 35%;
+}
+#online2 {
+    padding-top: 110px;
+    padding-bottom: 30px;
+    font-size: 10px;
+    border-bottom: 1px solid rgb(207, 202, 202);
+}
+#follow {
+    text-align: center;
+}
+#follow p {
+    font-size: 10px;
+    line-height: 10px;
+    margin: 10px;
+}
+#tel5 {
+    padding: 10px 0;
+    padding-top: 5px;
+}
+#tel5 span {
+    font-size: 20px;
+}
+
+/* -------------- icon ---------------- */
+
+#flex2 {
+    padding-bottom: 50px;
+}
+#icon4 ul {
+    display: flex;
+    padding-left: 3rem;
+}
+#icon4 li {
+    margin: 10px;
+}
+#facebook3 {
+    display: inline-block;
+    list-style-type: none;
+    background-color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+}
+#facebook3 img {
+    padding-top: 5px;
+    margin-left: 7px;
+    width: 70%;
+}
+#insta2 {
+    display: inline-block;
+    list-style-type: none;
+    background-color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+#insta2 img {
+    width: 40%;
+    padding-top: 10px;
+    margin-left: 12px;
+}
+#wifi3 {
+    display: inline-block;
+    list-style-type: none;
+    background-color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+#wifi3 img {
+    width: 50%;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+#nav4 {
+    display: none;
+}
+#botton5 {
+    display: none;
+}
+#footer-info {
+    display: none;
+}
+
+@media screen and (min-width:769px) {
+    #wedding-md {
+        margin: 15px 0;
+    }
+    #wedding img {
+        margin-top: 5px;
+    }
+    #spiral3 {
+        width: 50%;
+    }
+    #footer-info1 {
+        display: flex;
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgb(213, 208, 208);
+        padding-bottom: 30px;
+    }
+    #rogo6-h {
+        left: 2rem;
+    }
+    #rogo6 img {
+        width: 70%;
+        left: 1rem;
+    }
+    #online2 {
+        border-bottom: none;
+    }
+    #nav4 {
+        display: flex;
+    }
+    #nav4 .nav3 {
+        color: black;
+        border-bottom: 1px dotted;
+        font-size: 14px;
+    }
+    #botton5 {
+        display: flex;
+    }
+    .botton3 {
+        background-color: rgb(219, 214, 214);
+        text-decoration: none;
+        color: black;
+    }
+    .botton4 {
+        background-color: rgb(41, 15, 15);
+        margin-left: 1rem;
+        text-decoration: none;
+        color: white;
+    }
+    #footer-info {
+        display: block;
+    }
+    #footer-info a {
+        text-decoration: none;
+        color: black;
+        padding-right: 3rem;
+        line-height: 30px;
+    }
+    #follow {
+        text-align: start;
+    }
+    #follow .ptext {
+        font-size: 16px;
+    }
+    #flex2 {
+        display: flex;
+    }
+    #allright {
+        padding: 30px 0;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #spiral3 {
+        width: 40%;
+        left: 4.7rem;
+        top: 1rem;
+    }
+    #rogo6 img {
+        width: 50%;
+        top: 0;
+    }
+    #online2 {
+        text-align: left;
+        padding-left: 2.5rem;
+    }
+    #rogo6-h {
+        margin-left: 0.5rem;
+    }
+}
