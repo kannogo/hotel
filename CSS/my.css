@@ -252,6 +252,70 @@ body {
     }
 }
 
+/* -------------- sarch ------------------ */
+
+#sarch {
+    background-color: brown;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#sarch h6 {
+    color: white;
+    font-size: 16px;
+    border-top: 10px solid rgb(136, 110, 110);
+    padding: 10px;
+}
+#sarch_group {
+    max-width: 1000px;
+    margin: 5px auto;
+    background-color: white;
+    border: 1px solid rgb(187, 184, 184);
+    padding-top: 5px;
+}
+#sarch_form {
+    padding: 0 20px;
+}
+.sarch_text1 {
+    background-color: rgb(230, 220, 220);
+}
+.sarch_text1 span {
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+}
+.sarch_text2 input {
+    width: 60px;
+}
+.sarch_text2 {
+    margin-top: 0;
+    border-bottom: 1px dotted grey;
+}
+.sarch_text2 span {
+    padding: 0 5px;
+}
+#check {
+    width: 20px;
+    height: 15px;
+    padding-top: 20px;
+}
+#no2 {
+    margin: 1px 0;
+}
+#sarch_button input{
+    display: block;
+    margin: 10px auto;
+    font-weight: bold;
+    letter-spacing: 0;
+    font-size: 14px;
+    padding: 5px;
+}
+#select {
+    padding-top: 5px;
+}
+#select2 {
+    padding-top: 4px;
+}
+
 
 
 
@@ -1096,35 +1160,59 @@ a.nav-link-2 {
     }
 }
 
-/* ------------ monor --------------- */
+/* ------------ manor --------------- */
 
-#manor {
-    height: 50vh;
+#manor_group {
+    position: relative;
 }
-#manor p {
-    font-size: 10px;
+#manor {
+    height: 40vh;
+}
+#manor-text p {
+    font-size: 14px;
+    font-weight: bold;
 }
 #manor-text {
-    padding-top: 50px;
+    padding-top: 30px;
     letter-spacing: 1px;
-    line-height: 35px;
+    line-height: 30px;
 }
 
 @media screen and (min-width:769px) {
     #manor {
-        height: 60vh;
+        height: 50vh;
     }
     #manor-text {
         writing-mode: vertical-rl;
-        line-height: 80px;
         font-size: 17px;
-        
+    }
+    #manor-text p {
+        position: absolute;
+        left: 0;
+        top: 3rem;
+        padding: 90px 0;
+        line-height: 40px;
     }
 }
 
 @media screen and (min-width:1200px) {
     #manor {
-        height: 70vh;
+        height: 54vh;
+    }
+    #manor-text p {
+        font-size: 18px;
+        padding: 80px 0;
+        line-height: 60px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    #manor {
+        height: 60vh;
+    }
+    #manor-text p {
+        left: 5rem;
+        padding: 60px 0;
     }
 }
 

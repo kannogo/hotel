@@ -27,7 +27,68 @@
             <li class="li-border"><a href="../html/manial.html">過ごし方</a></li>
             <li class="li-border"><a href="../html/kasugai.html">春日井散策</a></li>
             <li class="p-4" id="plan"><a href="../html/plan.html">ご宿泊プラン</a></li>
-            <li class="p-4 m-0" id="sarch"><a class="text-white p-3" href="../html/sarch.html">空室検索</a></li>
+            <li class="p-4 m-0" id="sarch">
+                <a class="text-white p-3" href="#eventsearch" data-bs-toggle="offcanvas">空室検索</a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="eventsearch" style="width: 100vw;background-color: rgba(37, 26, 26, 0.9);color:white">
+                    <div id="offheader" class="offcanvas-header">
+                        <h5 class="offcanvas-title">空室検索<br><span>SEARCH</span></h5>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div id="search_group" class="list-group list-group-flush">
+                            <ul>
+                                <li>チェックイン<br><input type="date" id="date" name="今日の日付" value="2022-07-30"></li>
+                                <li id="check_block">日付未定<br><input id="checkbox" type="checkbox"></li>
+                                <li id="check_block2">泊数<br><select name="select" id="dropdown2">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select><span>泊</span></li>
+                                <li>
+                                    人数（1部屋あたり）<br><select name="select" id="dropdown3">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select><span>名様</span>
+                                </li>
+                                <li>
+                                    部屋数<br><select name="select" id="dropdown4">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select><span>部屋</span>
+                                </li>
+                                <Li class="button">
+                                    <h5>検索</h5>
+                                </Li>
+                            </ul>
+                        </div>
+                        <div class="button2">
+                            <a id="button2_text" href="">ご宿泊プラン<span>→</span></a>  
+                            <a id="button2_text" href="">空室カレンダー<span>→</span></a>  
+                        </div>
+                        <div class="tel_search">
+                            <p>お電話のご予約<span class="maintel">TEL.</span><space>0568-00-0000</space></p>
+                            <p class="maintel_text">夕食時は、お電話がつながりにくい場合がございます。</p>
+                            <p class="maintel_text">比較的つながりやすい時間帯(11：00~17：00頃)におかけ直しください。</p>
+                            <div id="tel_search2">
+                                <a href="">ご予約状況の確認<span>→</span></a>
+                                <a href="">ご予約内容の変更<span>→</span></a>
+                                <a href="">ご予約キャンセル<span>→</span></a>
+                            </div>
+                            <div id="button_close">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="background-color: white;"></button>
+                                <P>閉じる</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
             <li><a href="../html/kuraya.html">嵓屋だより</a></li>
             <li><a href="../html/access.html">アクセス</a></li>
             <li id="phone"><a href="#"></a><img id="tel" src="../images/143038.jpg" alt="">0568-00-0000</li>
