@@ -105,6 +105,9 @@
 .plan_button2 {
     text-align: right;
 }
+.sarch_bg h6 {
+    background-color: rgb(192, 155, 155);
+}
 
 @media screen and (max-width:1000px) {
     html {
